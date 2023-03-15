@@ -2,27 +2,35 @@
 public class Circulo {
     private double radio;
 
-    public Circulo(){
+    public Circulo()
+    {
         this.radio = 2;
     }
 
-    public Circulo(double radio){
+    public Circulo(double radio)
+    {
         this.radio = radio;
     }
 
-    public double getRadio(){
+    public double getRadio()
+    {
         return radio;
+
     }
 
-    public double setRadio(double radio){
+    public double setRadio(double radio)
+    {
         this.radio=radio;
         return radio;
     }
-    public double calcularArea() {
+    public double calcularArea()
+    {
         return (double) Math.PI * radio * radio;
     }
-    public double calcularPerimetro() {
+    public double calcularPerimetro()
+    {
         return (double) Math.PI * 2 * radio;
     }
+
 
 }
