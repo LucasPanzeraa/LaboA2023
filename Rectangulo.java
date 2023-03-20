@@ -1,8 +1,8 @@
-public class rectangulo {
+public class Rectangulo {
     private int base;
     private int altura;
 
-    public rectangulo(int base, int altura) {
+    public Rectangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
@@ -25,11 +25,18 @@ public class rectangulo {
 
     public int  parametro()
     {
-        return (int) base*2 + altura*2;
+        return base*2 + altura*2;
     }
 
     public int aera()
     {
-        return (int) base * altura;
+        return base * altura;
+    }
+
+    public static void main(String[] args) {
+
+        Rectangulo rec1 = new Rectangulo(3, 8);
+        System.out.println (rec1.aera());
     }
 }
+

@@ -1,11 +1,11 @@
-public class coche {
+public class Coche {
 
     private String marca;
     private String modelo;
     private String color;
     private int velocidad;
 
-    public coche(String marca, String modelo, String color) {
+    public Coche(String marca, String modelo, String color) {
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
@@ -37,12 +37,12 @@ public class coche {
 
     public int acelerar()
     {
-        return (int) velocidad + 1;
+        return velocidad + 1;
     }
 
     public int frenar()
     {
-        return (int) velocidad -1;
+        return velocidad -1;
     }
 
     public void mostrarVelocidad(int velocidad)

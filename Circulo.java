@@ -15,7 +15,6 @@ public class Circulo {
     public double getRadio()
     {
         return radio;
-
     }
 
     public double setRadio(double radio)
@@ -25,11 +24,11 @@ public class Circulo {
     }
     public double calcularArea()
     {
-        return (double) Math.PI * radio * radio;
+        return Math.PI * radio * radio;
     }
     public double calcularPerimetro()
     {
-        return (double) Math.PI * 2 * radio;
+        return Math.PI * 2 * radio;
     }
 
 

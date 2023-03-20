@@ -1,6 +1,8 @@
+package Unidad0;
+
 import java.util.Scanner;
 
-public class Ejecicio9 {
+public class Ejercicio9{
     public static void main(String[] args) {
         System.out.println("Igrese una palabra");
         Scanner entrada = new Scanner(System.in);
@@ -18,8 +20,6 @@ public class Ejecicio9 {
         }else {
             System.out.println("Las palabras son distintas");
         }
-
-
 
     }
 }
