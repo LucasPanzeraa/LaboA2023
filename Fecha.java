@@ -198,33 +198,36 @@ public class Fecha {
         }
     }
 
-    void menorQue (Fecha fecha) {
+    boolean menorQue (Fecha fecha) {
+        boolean anterior;
 
         if (this.anio < fecha.anio) {
-            System.out.println("La fecha es menor a la ingresada");
+            anterior = true;
 
         } else if (this.anio == fecha.anio) {
             if (this.mes < fecha.mes) {
-                System.out.println("La fecha es menor a la ingresada");
+                anterior = true;
 
             } else if (this.mes == fecha.mes) {
                 if(this.dia < fecha.dia){
-                    System.out.println("La fecha es menor a la ingresada");
+
+                    anterior = true;
 
                 }else if (this.dia == fecha.dia){
-                    System.out.println("La fecha no es menor a la ingresada");
+                    anterior = false;
 
                 }else{
-                    System.out.println("La fecha no es menor a la ingresada");
+                    anterior = false;
                 }
 
             }else {
-                System.out.println("La fecha no es menor a la ingresada");
+                anterior = false;
             }
 
         }else{
-            System.out.println("La fecha no es menor a la ingresada");
+            anterior = false;
         }
+        return anterior;
     }
 
     void mayorQue (Fecha fecha) {
@@ -255,6 +258,5 @@ public class Fecha {
             System.out.println("La fecha no es mayor a la ingresada");
         }
     }
-
 
 }
