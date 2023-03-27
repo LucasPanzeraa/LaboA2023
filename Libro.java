@@ -1,7 +1,7 @@
 public class Libro {
 
     String titulo;
-    String autor;
+    Persona autor;
     int ISBN;
     int cantidadDePaginas;
     String editorial;
@@ -16,11 +16,11 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public String getAutor() {
+    public Persona getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
+    public void setAutor(Persona autor) {
         this.autor = autor;
     }
 
@@ -57,7 +57,7 @@ public class Libro {
     }
 
 
-    public Libro(String titulo, String autor, int ISBN, int cantidadDePaginas, String editorial, Fecha fecha) {
+    public Libro(String titulo, Persona autor, int ISBN, int cantidadDePaginas, String editorial, Fecha fecha) {
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
@@ -86,25 +86,8 @@ public class Libro {
 
         anterior = this.fecha.menorQue(libro2.fecha);
 
-        if (anterior) {
-            System.out.println("El primer libro es anterior a el otro ingresado");
-
-        } else {
-            System.out.println("El otro libro es anteror a ");
-        }
         return anterior;
     }
 
-    public static void main(String[] args) {
-        Fecha fecha = new Fecha(1,2,2004);
-        Fecha fecha2 = new Fecha(2,3,2005);
 
-
-        Libro libro = new Libro(fecha);
-        Libro libro2 = new Libro(fecha2);
-
-
-        libro.libroAnterior(libro2);
-
-    }
 }
