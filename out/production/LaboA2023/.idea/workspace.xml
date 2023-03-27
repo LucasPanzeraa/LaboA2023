@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Libro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fecha.java" afterDir="false" />
+    <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="Ejercicios 1,2,3 unidad2">
+      <change beforePath="$PROJECT_DIR$/NumeroLetraPersona.java" beforeDir="false" afterPath="$PROJECT_DIR$/NumeroLetraPersona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,29 @@
       <option name="presentableId" value="Default" />
       <updated>1678878827733</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ejercicios 1,2,3 unidad2">
+      <created>1679921300492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679921300492</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ejercicios 1,2,3 unidad2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicios 1,2,3 unidad2" />
   </component>
 </project>

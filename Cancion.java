@@ -28,4 +28,9 @@ public class Cancion {
     public void setAutor(String autor) {
         this.autor = autor;
     }
+
+    public static void main(String[] args) {
+
+
+    }
 }
