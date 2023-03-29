@@ -2,35 +2,50 @@ import java.util.ArrayList;
 
 public class CD {
 
-    ArrayList<Cancion>CD;
+    ArrayList<Cancion>canciones;
+
 
     public CD() {
 
-        CD.add(new Cancion("goteo", "Duki"));
-        CD.add(new Cancion("sapo Pepe", "Topa"));
-        CD.add(new Cancion("silbando", "ysy A"));
-        CD.add(new Cancion("gordobobo", "cuker"));
+        canciones = new ArrayList<Cancion>();
     }
 
-    public ArrayList<Cancion> getCD() {
-        return CD;
+    public ArrayList<Cancion> getCanciones() {
+        return canciones;
     }
 
-    public void setCD(ArrayList<Cancion> CD) {
-        this.CD = CD;
+    public void setCanciones(ArrayList<Cancion> canciones) {
+        this.canciones = canciones;
     }
 
     public int numeroCanciones(){
 
-        int cantidadCanciones = 0;
-        for(int i = 0; i < CD.size(); i++){
-            cantidadCanciones ++;
-        }
+        int cantidadCanciones = canciones.size();
         return cantidadCanciones;
     }
 
-    public static void main(String[] args) {
+    public Cancion verCancion(int posicion){
 
-        
+        return canciones.get(posicion);
     }
+
+    public void grabaCancion(int posición, Cancion nuevaCancion){
+
+        Cancion cancionElegida = canciones.get(posición);
+
+        cancionElegida.setTitulo(nuevaCancion.titulo);
+        cancionElegida.setAutor(nuevaCancion.autor);
+    }
+
+    public void agrega(Cancion cancion){
+
+        canciones.add(cancion);
+    }
+
+    public void eliminarCancion (int posición){
+
+        canciones.remove(posición);
+    }
+
+
 }
