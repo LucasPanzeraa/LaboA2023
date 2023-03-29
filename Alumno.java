@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 
 public class Alumno {
+    private ArrayList<Materia>materias;
     private String apellido;
     private Fecha fechaNacimiento;
-    ArrayList<Integer> notas;
 
-    public Alumno(String apellido, Fecha fechaNacimiento, ArrayList<Integer> notas) {
+
+    public Alumno(ArrayList<Materia> materias, String apellido, Fecha fechaNacimiento) {
+        this.materias = materias;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
-        this.notas = notas;
     }
 
     public String getApellido() {
@@ -27,36 +28,28 @@ public class Alumno {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public ArrayList<Integer> getNotas() {
-        return notas;
+
+
+
+
+
+    public Alumno(ArrayList<Materia> materias) {
+        this.materias = materias;
     }
 
-    public void setNotas(ArrayList<Integer> notas) {
-        this.notas = notas;
+    public ArrayList<Materia> getMaterias() {
+        return materias;
     }
 
-    public void Agregar(int nota){
-
-        notas.add(nota);
+    public void setMaterias(ArrayList<Materia> materias) {
+        this.materias = materias;
     }
 
-    public void MenorNota(){
+    public void AgregarMateria(Materia materiaAAgregar) {
 
-        double menorNota = 10;
-        for (int nota : notas){
-            if (nota < menorNota){
-                menorNota = nota;
-            }
-        }
+        materias.add(materiaAAgregar);
     }
 
-    public void MayorNota(){
 
-        double mayorNota = 0;
-        for (int nota:notas) {
-            if (nota > mayorNota){
-                mayorNota = nota;
-            }
-        }
-    }
+
 }

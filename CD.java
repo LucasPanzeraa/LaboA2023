@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class CD {
 
-    ArrayList<Cancion>canciones;
+    private ArrayList<Cancion>canciones;
 
 
     public CD() {
