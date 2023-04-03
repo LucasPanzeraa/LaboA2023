@@ -12,6 +12,18 @@ public class Alumno {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+
+    public Alumno(String apellido) {
+        this.apellido = apellido;
+        this.materias = new ArrayList<>();
+    }
+
+    public Alumno(String apellido, Fecha fechaNacimiento) {
+        this.apellido = apellido;
+        this.fechaNacimiento = fechaNacimiento;
+        this.materias = new ArrayList<>();
+    }
+
     public String getApellido() {
         return apellido;
     }
@@ -28,11 +40,6 @@ public class Alumno {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-
-
-
-
-
     public Alumno(ArrayList<Materia> materias) {
         this.materias = materias;
     }
@@ -45,9 +52,16 @@ public class Alumno {
         this.materias = materias;
     }
 
-    public void AgregarMateria(Materia materiaAAgregar) {
 
-        materias.add(materiaAAgregar);
+    public double promedioNotasAlumno(){
+
+        double promedio = 0;
+        for (Materia materia: materias) {
+
+            promedio = promedio + materia.promedioNotasMateria();
+        }
+        promedio = promedio / materias.size();
+        return promedio;
     }
 
 

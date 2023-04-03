@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="Ejercicios 1,2,3 unidad2" />
+    <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="Ejercicios 1,2,3 unidad2">
+      <change beforePath="$PROJECT_DIR$/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Materia.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +40,14 @@
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CD">
+    <configuration name="CD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CD" />
+      <module name="LaboA2023" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumeroLetraPersona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NumeroLetraPersona" />
       <module name="LaboA2023" />
@@ -46,6 +57,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CD" />
         <item itemvalue="Application.NumeroLetraPersona" />
       </list>
     </recent_temporary>
@@ -83,5 +95,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ejercicios 1,2,3 unidad2" />
     <option name="LAST_COMMIT_MESSAGE" value="Ejercicios 1,2,3 unidad2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

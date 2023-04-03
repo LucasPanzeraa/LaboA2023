@@ -4,11 +4,15 @@ public class Materia {
     private String nombre;
     private ArrayList<Integer> listaNotas;
 
+    public Materia() {
+        this.nombre = "Lucas";
+        this.listaNotas = new ArrayList<>();
+    }
+
     public Materia(String nombre, ArrayList<Integer> listaNotas) {
         this.nombre = nombre;
         this.listaNotas = listaNotas;
     }
-
 
     public String getNombre() {
         return nombre;
@@ -51,6 +55,23 @@ public class Materia {
 
         listaNotas.add(nota);
     }
+
+    public void AgregarMateria(Materia materiaAAgregar) {
+
+        Materia materiaNueva = materiaAAgregar;
+    }
+
+    public double promedioNotasMateria(){
+
+        double promedio =0;
+        for (int notas: listaNotas) {
+            promedio = promedio + notas;
+        }
+
+        promedio = promedio / listaNotas.size();
+        return promedio;
+    }
+
 
 
 
