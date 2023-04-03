@@ -10,26 +10,22 @@ public class Main {
         materia1.setNombre("Matematicas");
         materia.setNombre("lengua");
 
-        ArrayList<Integer>notas1 = new ArrayList<>();
-        notas1.add(5);
-        notas1.add(7);
-        notas1.add(6);
-        notas1.add(8);
-        notas1.add(9);
+        ArrayList<Integer>Lucas = new ArrayList<>();
+        Lucas.add(5);
+        Lucas.add(7);
+        Lucas.add(6);
+        Lucas.add(8);
+        Lucas.add(9);
 
-        ArrayList<Integer>notas = new ArrayList<>();
-        notas.add(2);
-        notas.add(9);
-        notas.add(3);
-        notas.add(7);
-        notas.add(5);
+        ArrayList<Integer>anni = new ArrayList<>();
+        anni.add(2);
+        anni.add(9);
+        anni.add(3);
+        anni.add(7);
+        anni.add(5);
 
-        materia.setListaNotas(notas);
-        materia1.setListaNotas(notas1);
-
-        System.out.println();
-
-
+        materia.setListaNotas(Lucas);
+        materia1.setListaNotas(anni);
 
         Alumno alumno = new Alumno("Panzera");
 
@@ -43,7 +39,6 @@ public class Main {
 
 
 
-        System.out.println(alumno.promedioNotasAlumno());
 
 
 
