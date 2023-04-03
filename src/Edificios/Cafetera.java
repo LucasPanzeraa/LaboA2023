@@ -1,3 +1,4 @@
+package src.Edificios;
 
 public class Cafetera {
 

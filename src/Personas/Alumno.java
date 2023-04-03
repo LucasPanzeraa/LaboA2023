@@ -1,4 +1,9 @@
+package src.Personas;
+
 import java.util.ArrayList;
+
+import src.Fecha;
+import src.Materia;
 
 public class Alumno {
     private ArrayList<Materia>materias;

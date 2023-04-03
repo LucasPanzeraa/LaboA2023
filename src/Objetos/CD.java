@@ -1,3 +1,7 @@
+package src.Objetos;
+
+import src.Cancion;
+
 import java.util.ArrayList;
 
 public class CD {

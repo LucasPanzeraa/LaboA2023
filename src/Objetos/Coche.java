@@ -1,3 +1,5 @@
+package src.Objetos;
+
 public class Coche {
 
     private String marca;

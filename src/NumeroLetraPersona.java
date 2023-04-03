@@ -1,3 +1,7 @@
+package src;
+
+import src.Personas.Persona;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

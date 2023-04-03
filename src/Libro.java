@@ -1,7 +1,7 @@
 //public class Libro {
 //
 //    String titulo;
-//    Persona autor;
+//    src.Personas.Persona autor;
 //
 //    int ISBN;
 //    int cantidadDePaginas;
@@ -17,11 +17,11 @@
 //        this.titulo = titulo;
 //    }
 //
-//    public Persona getAutor() {
+//    public src.Personas.Persona getAutor() {
 //        return autor;
 //    }
 //
-//    public void setAutor(Persona autor) {
+//    public void setAutor(src.Personas.Persona autor) {
 //        this.autor = autor;
 //    }
 //
@@ -58,7 +58,7 @@
 //    }
 //
 //
-//    public Libro(String titulo, Persona autor, int ISBN, int cantidadDePaginas, String editorial, Fecha fecha) {
+//    public Libro(String titulo, src.Personas.Persona autor, int ISBN, int cantidadDePaginas, String editorial, Fecha fecha) {
 //        this.titulo = titulo;
 //        this.autor = autor;
 //        this.ISBN = ISBN;

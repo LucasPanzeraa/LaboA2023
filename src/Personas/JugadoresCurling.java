@@ -1,3 +1,5 @@
+package src.Personas;
+
 import java.util.Date;
 
 public class JugadoresCurling {
@@ -14,6 +16,7 @@ public class JugadoresCurling {
         this.numeroDeCamiseta = numeroDeCamiseta;
         this.capitan = capitan;
     }
+
 
     public String getNombre() {
         return nombre;

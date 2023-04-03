@@ -1,4 +1,4 @@
-package Unidad0;
+package src.Unidad0;
 
 import java.util.Scanner;
 

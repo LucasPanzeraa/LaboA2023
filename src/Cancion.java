@@ -1,7 +1,9 @@
+package src;
+
 public class Cancion {
 
-    String titulo;
-    String autor;
+    public String titulo;
+    public String autor;
 
     public Cancion(String titulo, String autor) {
         this.titulo = titulo;

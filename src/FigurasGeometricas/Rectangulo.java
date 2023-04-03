@@ -1,3 +1,5 @@
+package src.FigurasGeometricas;
+
 public class Rectangulo {
     private int base;
     private int altura;
