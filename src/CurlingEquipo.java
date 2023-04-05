@@ -4,21 +4,16 @@ import src.Personas.JugadoresCurling;
 
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class CurlingEquipo {
 
-    ArrayList<JugadoresCurling> jugadores;
-    ArrayList<Boolean>horarioMañana;
-    ArrayList<Boolean>horarioMediodia;
-    ArrayList<Boolean>horarioNoche;
-    String nombre;
-    String barrio;
+    private ArrayList<JugadoresCurling> jugadores;
+    private String nombre;
+    private String barrio;
 
-    public CurlingEquipo(ArrayList<JugadoresCurling> jugadores, ArrayList<Boolean> horariosMañana, ArrayList<Boolean> horariosMediodia, ArrayList<Boolean> horariosNoche, String nombre, String barrio) {
+    public CurlingEquipo(ArrayList<JugadoresCurling> jugadores, String nombre, String barrio) {
         this.jugadores = jugadores;
-        this.horarioMañana = horariosMañana;
-        this.horarioMediodia = horariosMediodia;
-        this.horarioNoche = horariosNoche;
         this.nombre = nombre;
         this.barrio = barrio;
     }
@@ -69,5 +64,44 @@ public class CurlingEquipo {
 
     public void setBarrio(String barrio) {
         this.barrio = barrio;
+    }
+
+    public boolean VerificarNumero(JugadoresCurling jugador1){
+
+        boolean repetido = false;
+        for (JugadoresCurling jugador:jugadores) {
+
+            if (jugador1.getNumeroDeCamiseta() == jugador.getNumeroDeCamiseta()){
+                return repetido = true;
+            }
+            repetido = false;
+        }
+        return repetido;
+    }
+
+    public void AgregarJugador(JugadoresCurling jugador){
+        jugadores.add(jugador);
+        if (VerificarNumero(jugador)){
+            System.out.println("No se puede agregar el jugador con ese numero");
+
+        } else if (jugadores.size() == 10) {
+            System.out.println("No se puede agregar el jugador porque el equipo esta lleno");
+        }
+    }
+
+    public void EliminarJugador(JugadoresCurling jugador){
+
+        jugadores.remove(jugador);
+        if (jugador.isCapitan() == true){
+            System.out.println("Eliga un nuevo capitan");
+            Scanner entrada = new Scanner(System.in);
+            String nombreJugador;
+            nombreJugador = entrada.next();
+            for (int i = 0;i < jugadores.size(); i ++){
+                if (jugadores.get(i).getNombre() == nombreJugador){
+                    jugadores.get(i).setCapitan(true);
+                }
+            }
+        }
     }
 }

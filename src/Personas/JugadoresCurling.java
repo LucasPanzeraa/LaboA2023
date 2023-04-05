@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class JugadoresCurling {
 
-    String nombre;
-    Date fechaDeNacimiento;
-    int numeroDeCamiseta;
-    boolean capitan;
+     String nombre;
+    private Date fechaDeNacimiento;
+    private int numeroDeCamiseta;
+    private boolean capitan;
 
 
     public JugadoresCurling(String nombre, Date fechaDeNacimiento, int numeroDeCamiseta, boolean capitan) {
@@ -49,4 +49,6 @@ public class JugadoresCurling {
     public void setCapitan(boolean capitan) {
         this.capitan = capitan;
     }
+
+
 }

@@ -3,60 +3,29 @@ import java.util.ArrayList;
 
 public class Partidos {
 
-    int dia;
-    String horarioPartido;
-    ArrayList<CurlingEquipo>equiposDelPartido;
+    private CurlingEquipo equipo1;
+    private CurlingEquipo equipo2;
 
 
-    public Partidos(int dia, String horario, ArrayList<CurlingEquipo> equiposDelPartido) {
-        this.dia = dia;
-        this.horarioPartido = horario;
-        this.equiposDelPartido = equiposDelPartido;
+    public Partidos(CurlingEquipo equipo1, CurlingEquipo equipo2) {
+        this.equipo1 = equipo1;
+        this.equipo2 = equipo2;
     }
 
-    public int getDia() {
-        return dia;
+    public CurlingEquipo getEquipo1() {
+        return equipo1;
     }
 
-    public void setDia(int dia) {
-        this.dia = dia;
+    public void setEquipo1(CurlingEquipo equipo1) {
+        this.equipo1 = equipo1;
     }
 
-    public String getHorario() {
-        return horarioPartido;
+    public CurlingEquipo getEquipo2() {
+        return equipo2;
     }
 
-    public void setHorario(String horario) {
-        this.horarioPartido = horario;
-    }
-
-    public ArrayList<CurlingEquipo> getEquiposDelPartido() {
-        return equiposDelPartido;
-    }
-
-    public void setEquiposDelPartido(ArrayList<CurlingEquipo> equiposDelPartido) {
-        this.equiposDelPartido = equiposDelPartido;
-    }
-
-    public void DispocicionHoraria(CurlingEquipo equipo1, CurlingEquipo equipo2){
-
-        for (int i = 0; i < equipo1.horarioMañana.size(); i ++){
-
-            if(equipo1.horarioMañana.get(i) == equipo2.horarioMañana.get(i)){
-                horarioPartido = "horarioMañana";
-                dia = i;
-                return;
-            } else if (equipo1.horarioMediodia.get(i) == equipo2.horarioMediodia.get(i)) {
-                horarioPartido = "horarioMediodia";
-                dia = i;
-                return;
-
-            } else if (equipo1.horarioNoche.get(i) == equipo2.horarioNoche.get(i)) {
-                horarioPartido = "HorarioNoche";
-                dia = i;
-                return;
-            }
-        }
+    public void setEquipo2(CurlingEquipo equipo2) {
+        this.equipo2 = equipo2;
     }
 
 
