@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="Ejercicios 1,2,3 unidad2">
-      <change afterPath="$PROJECT_DIR$/FixtureCurling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JugadoresCurling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Partidos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curling.java" beforeDir="false" afterPath="$PROJECT_DIR$/CurlingEquipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Directivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oficial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Operario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tecnico.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +38,16 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/panzera-brandon/LaboA2023&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="CD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CD" />
