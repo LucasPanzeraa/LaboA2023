@@ -1,6 +1,6 @@
 package src.FigurasGeometricas;
 
-public class Circulo {
+public class Circulo extends FiguraGeometrica{
     private double radio;
 
     public Circulo()
@@ -23,14 +23,16 @@ public class Circulo {
         this.radio=radio;
         return radio;
     }
-    public double calcularArea()
-    {
+
+    @Override
+    public double CalcularArea() {
+
         return Math.PI * radio * radio;
     }
-    public double calcularPerimetro()
-    {
+
+    @Override
+    public double CalcularPerimetro() {
+
         return Math.PI * 2 * radio;
     }
-
-
 }

@@ -1,6 +1,6 @@
 package src.FigurasGeometricas;
 
-public class Rectangulo {
+public class Rectangulo extends FiguraGeometrica{
     private int base;
     private int altura;
 
@@ -25,20 +25,15 @@ public class Rectangulo {
         this.altura = altura;
     }
 
-    public int  perimetro()
-    {
+
+    @Override
+    public double CalcularPerimetro() {
         return base*2 + altura*2;
     }
 
-    public int area()
-    {
+    @Override
+    public double CalcularArea() {
         return base * altura;
-    }
-
-    public static void main(String[] args) {
-
-        Rectangulo rec1 = new Rectangulo(3, 8);
-        System.out.println (rec1.area());
     }
 }
 
