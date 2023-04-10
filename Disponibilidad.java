@@ -1,6 +1,9 @@
 import src.CurlingEquipo;
 
+import java.util.ArrayList;
+
 public class Disponibilidad {
+
     private String horarioPartido;
     private int dia;
 

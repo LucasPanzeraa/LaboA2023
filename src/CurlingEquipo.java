@@ -8,6 +8,9 @@ import java.util.Scanner;
 
 public class CurlingEquipo {
 
+    public  ArrayList<Boolean> horarioMañana;
+    public ArrayList<Boolean> horarioMediodia;
+    public ArrayList<Boolean> horarioNoche;
     private ArrayList<JugadoresCurling> jugadores;
     private String nombre;
     private String barrio;
