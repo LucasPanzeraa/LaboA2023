@@ -2,21 +2,21 @@ package src.Personas;
 
 import java.util.Date;
 
-public class JugadoresCurling {
+public class JugadoresCurling extends Persona{
 
-     String nombre;
+    String nombre;
     private Date fechaDeNacimiento;
     private int numeroDeCamiseta;
     private boolean capitan;
 
 
-    public JugadoresCurling(String nombre, Date fechaDeNacimiento, int numeroDeCamiseta, boolean capitan) {
-        this.nombre = nombre;
+    public JugadoresCurling(String nombre, int edad, String nombre1, Date fechaDeNacimiento, int numeroDeCamiseta, boolean capitan) {
+        super(nombre, edad);
+        this.nombre = nombre1;
         this.fechaDeNacimiento = fechaDeNacimiento;
         this.numeroDeCamiseta = numeroDeCamiseta;
         this.capitan = capitan;
     }
-
 
     public String getNombre() {
         return nombre;

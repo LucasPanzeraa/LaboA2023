@@ -25,12 +25,12 @@ public class Rectangulo {
         this.altura = altura;
     }
 
-    public int  parametro()
+    public int  perimetro()
     {
         return base*2 + altura*2;
     }
 
-    public int aera()
+    public int area()
     {
         return base * altura;
     }
@@ -38,7 +38,7 @@ public class Rectangulo {
     public static void main(String[] args) {
 
         Rectangulo rec1 = new Rectangulo(3, 8);
-        System.out.println (rec1.aera());
+        System.out.println (rec1.area());
     }
 }
 

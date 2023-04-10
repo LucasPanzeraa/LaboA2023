@@ -5,29 +5,32 @@ import java.util.ArrayList;
 import src.Fecha;
 import src.Materia;
 
-public class Alumno {
+public class Alumno extends Persona{
     private ArrayList<Materia>materias;
     private String apellido;
     private Fecha fechaNacimiento;
 
 
-    public Alumno(ArrayList<Materia> materias, String apellido, Fecha fechaNacimiento) {
+    public Alumno(String nombre, int edad, ArrayList<Materia> materias, String apellido, Fecha fechaNacimiento) {
+        super(nombre, edad);
         this.materias = materias;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
     }
 
 
-    public Alumno(String apellido) {
+    public Alumno(String nombre, int edad, ArrayList<Materia> materias, String apellido) {
+        super(nombre, edad);
+        this.materias = materias;
+        this.apellido = apellido;
+    }
+
+    public Alumno(String apellido, String nombre, int edad) {
+        super(nombre,edad);
         this.apellido = apellido;
         this.materias = new ArrayList<>();
     }
 
-    public Alumno(String apellido, Fecha fechaNacimiento) {
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
-        this.materias = new ArrayList<>();
-    }
 
     public String getApellido() {
         return apellido;
@@ -45,9 +48,7 @@ public class Alumno {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public Alumno(ArrayList<Materia> materias) {
-        this.materias = materias;
-    }
+
 
     public ArrayList<Materia> getMaterias() {
         return materias;

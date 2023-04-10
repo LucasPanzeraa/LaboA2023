@@ -1,3 +1,5 @@
+import src.Personas.Empleado;
+
 public class Directivo extends Empleado {
 
     public Directivo(String nombre) {

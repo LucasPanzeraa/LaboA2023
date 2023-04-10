@@ -1,3 +1,5 @@
+import src.Personas.Empleado;
+
 public class Operario extends Empleado {
 
     public Operario(String nombre) {

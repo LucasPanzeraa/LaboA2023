@@ -1,3 +1,5 @@
+package src.Personas;
+
 public class Empleado {
     private String nombre;
 
@@ -20,28 +22,11 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado{" +
+        return "src.Personas.Empleado{" +
                 "nombre='" + nombre + '\'' +
                 '}';
     }
-
-
-        public class Oficial extends Operario{
-
-            @Override
-            public String toString() {
-                return "Oficial{" +
-                        "nombre='" + nombre + '\'' +
-                        '}';
-            }
-        }
-
-
-        public class Tecnicio{
-
-
-        }
-    }
+}
 
 
 
