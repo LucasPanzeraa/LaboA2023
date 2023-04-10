@@ -1,4 +1,8 @@
-public class Tecnico extends Operario{
+package src.Empresas;
+
+import src.Empresas.Operario;
+
+public class Tecnico extends Operario {
 
     public Tecnico(String nombre) {
         super(nombre);
@@ -6,7 +10,7 @@ public class Tecnico extends Operario{
 
     @Override
     public String toString() {
-        return "Tecnico{" +
+        return "src.Empresas.Tecnico{" +
                 "nombre='" + getNombre() + '\'' +
                 '}';
     }

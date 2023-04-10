@@ -1,3 +1,5 @@
+package src.Empresas;
+
 import src.Personas.Empleado;
 
 public class Directivo extends Empleado {
@@ -11,7 +13,7 @@ public class Directivo extends Empleado {
 
     @Override
     public String toString() {
-        return "Directivo{" +
+        return "src.Empresas.Directivo{" +
                 "nombre='" + getNombre() + '\'' +
                 '}';
     }

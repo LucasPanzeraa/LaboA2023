@@ -1,4 +1,4 @@
-package src;
+package src.Educacion;
 
 import java.util.ArrayList;
 

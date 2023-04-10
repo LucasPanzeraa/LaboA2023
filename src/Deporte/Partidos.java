@@ -1,5 +1,5 @@
-package src;
-import java.util.ArrayList;
+package src.Deporte;
+import src.Deporte.CurlingEquipo;
 
 public class Partidos {
 

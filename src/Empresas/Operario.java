@@ -1,3 +1,5 @@
+package src.Empresas;
+
 import src.Personas.Empleado;
 
 public class Operario extends Empleado {
@@ -11,7 +13,7 @@ public class Operario extends Empleado {
 
     @Override
     public String toString() {
-        return "Operario{" +
+        return "src.Empresas.Operario{" +
                 "nombre='" + getNombre() + '\'' +
                 '}';
     }

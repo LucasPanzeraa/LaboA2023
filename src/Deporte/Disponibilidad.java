@@ -1,6 +1,6 @@
-import src.CurlingEquipo;
+package src.Deporte;
 
-import java.util.ArrayList;
+import src.Deporte.CurlingEquipo;
 
 public class Disponibilidad {
 

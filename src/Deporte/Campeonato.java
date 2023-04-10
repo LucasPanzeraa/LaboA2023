@@ -1,4 +1,4 @@
-import src.Partidos;
+package src.Deporte;
 
 import java.util.ArrayList;
 

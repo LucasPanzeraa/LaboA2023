@@ -1,4 +1,4 @@
-package src;
+package src.Tiempo;
 
 public class Fecha {
 
@@ -225,7 +225,7 @@ public class Fecha {
         }
     }
 
-    boolean menorQue (Fecha fecha) {
+    public boolean menorQue(Fecha fecha) {
         boolean anterior;
 
         if (this.anio < fecha.anio) {

@@ -1,6 +1,6 @@
 package src.Objetos;
 
-import src.Cancion;
+import src.Musica.Cancion;
 
 import java.util.ArrayList;
 

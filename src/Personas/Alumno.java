@@ -2,8 +2,8 @@ package src.Personas;
 
 import java.util.ArrayList;
 
-import src.Fecha;
-import src.Materia;
+import src.Tiempo.Fecha;
+import src.Educacion.Materia;
 
 public class Alumno extends Persona{
     private ArrayList<Materia>materias;

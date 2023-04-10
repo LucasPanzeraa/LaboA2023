@@ -1,4 +1,8 @@
-public class Oficial extends Operario{
+package src.Empresas;
+
+import src.Empresas.Operario;
+
+public class Oficial extends Operario {
 
     public Oficial(String nombre) {
         super(nombre);
@@ -6,7 +10,7 @@ public class Oficial extends Operario{
 
     @Override
     public String toString() {
-        return "Oficial{" +
+        return "src.Empresas.Oficial{" +
                 "nombre='" + getNombre() + '\'' +
                 '}';
     }
