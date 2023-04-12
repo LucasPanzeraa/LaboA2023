@@ -1,8 +1,12 @@
 package src.Personas;
 
+import java.util.Date;
+
 public class Persona {
     private String nombre;
+    private String apellido;
     private int edad;
+    private Date fehcaDeNacimiento;
     private String direccion;
 
     public Persona(String nombre, int edad) {
@@ -10,6 +14,27 @@ public class Persona {
         this.edad = edad;
     }
 
+    public Persona(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public Date getFehcaDeNacimiento() {
+        return fehcaDeNacimiento;
+    }
+
+    public void setFehcaDeNacimiento(Date fehcaDeNacimiento) {
+        this.fehcaDeNacimiento = fehcaDeNacimiento;
+    }
 
     public String getNombre() {
         return nombre;

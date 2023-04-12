@@ -65,10 +65,10 @@ public class Coche extends Vehiculo{
         int autosNoDescapotables = 0;
         double porcentajeDeDescapotables;
 
-        for (Vehiculo autos: getListaDeVehiculo()) {
+        for (Vehiculo lista: getListaDeVehiculo()) {
 
-            if (autos instanceof Coche){
-                if (((Coche) autos).descapotable){
+            if (lista instanceof Coche){
+                if (((Coche) lista).descapotable){
                     autosDescapotables ++;
                 }
                 else {

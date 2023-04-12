@@ -7,48 +7,17 @@ import src.Educacion.Materia;
 
 public class Alumno extends Persona{
     private ArrayList<Materia>materias;
-    private String apellido;
-    private Fecha fechaNacimiento;
+    private String divicion;
 
-
-    public Alumno(String nombre, int edad, ArrayList<Materia> materias, String apellido, Fecha fechaNacimiento) {
-        super(nombre, edad);
-        this.materias = materias;
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
+    public Alumno() {
+        super("cooki", "breindon");
+        divicion = "3°A";
     }
 
-
-    public Alumno(String nombre, int edad, ArrayList<Materia> materias, String apellido) {
-        super(nombre, edad);
-        this.materias = materias;
-        this.apellido = apellido;
+    public Alumno(String nombre, String apellido, String divicion) {
+        super(nombre, apellido);
+        this.divicion = divicion;
     }
-
-    public Alumno(String apellido, String nombre, int edad) {
-        super(nombre,edad);
-        this.apellido = apellido;
-        this.materias = new ArrayList<>();
-    }
-
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public Fecha getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Fecha fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-
 
     public ArrayList<Materia> getMaterias() {
         return materias;
