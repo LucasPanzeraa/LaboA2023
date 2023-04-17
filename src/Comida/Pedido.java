@@ -1,29 +1,31 @@
 package src.Comida;
 
-import src.Comida.Plato;
 import src.Personas.Persona;
 import src.Personas.Profesor;
 
-import java.sql.Time;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Pedido {
+    private int idPedido;
     private Date fechaDeCreacion;
     private Plato plato;
     private Persona personaQuePidio;
-    private Time horaDeEntrega;
+    private double horaDeEntrega;
     private boolean entrgado;
 
 
     public Pedido() {
-        fechaDeCreacion = new Date(04,05,2006);
+        fechaDeCreacion = new Date(4, Calendar.JUNE,2006);
         plato = new Plato();
         personaQuePidio = new Profesor();
-        horaDeEntrega = new Time(20,12,8);
+        horaDeEntrega = 20.30;
         entrgado = false;
+        idPedido = 1;
     }
 
-    public Pedido(Date fechaDeCreacion, Plato plato, Persona personaQuePidio, Time horaDeEntrega, boolean entrgado) {
+    public Pedido(int idPedido, Date fechaDeCreacion, Plato plato, Persona personaQuePidio, double horaDeEntrega, boolean entrgado) {
+        this.idPedido = idPedido;
         this.fechaDeCreacion = fechaDeCreacion;
         this.plato = plato;
         this.personaQuePidio = personaQuePidio;
@@ -55,11 +57,11 @@ public class Pedido {
         this.personaQuePidio = personaQuePidio;
     }
 
-    public Time getHoraDeEntrega() {
+    public double getHoraDeEntrega() {
         return horaDeEntrega;
     }
 
-    public void setHoraDeEntrega(Time horaDeEntrega) {
+    public void setHoraDeEntrega(double horaDeEntrega) {
         this.horaDeEntrega = horaDeEntrega;
     }
 
@@ -69,5 +71,23 @@ public class Pedido {
 
     public void setEntrgado(boolean entrgado) {
         this.entrgado = entrgado;
+    }
+
+    public int getIdPedido() {
+        return idPedido;
+    }
+
+    public void setIdPedido(int idPedido) {
+        this.idPedido = idPedido;
+    }
+
+    void aplicarDescuento(){
+        if (personaQuePidio instanceof Profesor){
+            int precioADescontar= plato.getPrecio()* ((Profesor) personaQuePidio).getPorcentajeDeDescuento()/100;
+            plato.setPrecioFinal(plato.getPrecio()-precioADescontar);
+        }
+        else {
+            plato.setPrecioFinal(plato.getPrecio());
+        }
     }
 }

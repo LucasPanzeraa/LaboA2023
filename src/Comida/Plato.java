@@ -4,6 +4,7 @@ public class Plato {
 
     private String nombre;
     private int precio;
+    private int precioFinal;
 
 
     public Plato() {
@@ -13,6 +14,14 @@ public class Plato {
     public Plato(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
+    }
+
+    public int getPrecioFinal() {
+        return precioFinal;
+    }
+
+    public void setPrecioFinal(int precioFinal) {
+        this.precioFinal = precioFinal;
     }
 
     public String getNombre() {
