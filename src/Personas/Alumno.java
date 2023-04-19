@@ -5,7 +5,7 @@ import src.Educacion.Materia;
 
 public class Alumno extends Persona{
     private ArrayList<Materia>materias;
-    private String divicion;
+    private  String divicion;
 
     public Alumno() {
         super("cooki", "breindon");

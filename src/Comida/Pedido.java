@@ -13,6 +13,7 @@ public class Pedido {
     private Persona personaQuePidio;
     private double horaDeEntrega;
     private boolean entrgado;
+    private int precioFinal;
 
 
     public Pedido() {
@@ -31,6 +32,14 @@ public class Pedido {
         this.personaQuePidio = personaQuePidio;
         this.horaDeEntrega = horaDeEntrega;
         this.entrgado = entrgado;
+    }
+
+    public int getPrecioFinal() {
+        return precioFinal;
+    }
+
+    public void setPrecioFinal(int precioFinal) {
+        this.precioFinal = precioFinal;
     }
 
     public Date getFechaDeCreacion() {
@@ -84,10 +93,10 @@ public class Pedido {
     void aplicarDescuento(){
         if (personaQuePidio instanceof Profesor){
             int precioADescontar= plato.getPrecio()* ((Profesor) personaQuePidio).getPorcentajeDeDescuento()/100;
-            plato.setPrecioFinal(plato.getPrecio()-precioADescontar);
+            setPrecioFinal(plato.getPrecio()-precioADescontar);
         }
         else {
-            plato.setPrecioFinal(plato.getPrecio());
+            setPrecioFinal(plato.getPrecio());
         }
     }
 }

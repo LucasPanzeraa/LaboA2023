@@ -1,12 +1,14 @@
-package src.Comida;
+package src.Web;
 
+import src.Comida.Pedido;
+import src.Comida.Plato;
 import src.Personas.Alumno;
 import src.Personas.Profesor;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Menu {
+public class Sistema {
 
     private ArrayList<Alumno> listaDeAlumnos;
     private ArrayList<Profesor> listaDeProfesores;
@@ -179,14 +181,6 @@ public class Menu {
                     break;
                 }
             break;
-        }
-    }
-
-    void pedidosConDescuento(){
-
-        for (Pedido lista: listaDePedidos) {
-
-
         }
     }
 }
