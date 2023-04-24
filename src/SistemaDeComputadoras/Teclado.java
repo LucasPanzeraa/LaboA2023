@@ -1,6 +1,4 @@
-package src.Web;
-
-import src.Objetos.DispositivosEntrada;
+package src.SistemaDeComputadoras;
 
 public class Teclado extends DispositivosEntrada {
 

@@ -1,6 +1,6 @@
-package src.Web;
+package src.SistemaDeComputadoras;
 
-public class Pantalla extends src.Web.DispositivosSalida {
+public class Pantalla extends DispositivosSalida {
 
     public Pantalla(int cantidadDePuertos) {
         super(cantidadDePuertos);

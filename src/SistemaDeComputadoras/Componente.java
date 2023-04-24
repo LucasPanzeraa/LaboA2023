@@ -1,33 +1,30 @@
-package src.Objetos;
+package src.SistemaDeComputadoras;
 
-public class Componentes {
+public class Componente {
 
-
-    private String tipoDeComponente;
+    private String Nombre;
     private String nombreDelFabricante;
     private String modelo;
     private int precioDeVenta;
-    private int aumentoSegunInflación;
     private int stock;
 
 
-    public Componentes(String tipoDeComponente, String nombreDelFabricante, String modelo, int precioDeVenta, int aumentoSegunInflación, int stock) {
-        this.tipoDeComponente = tipoDeComponente;
+    public Componente(String nombre, String nombreDelFabricante, String modelo, int precioDeVenta, int stock) {
+        Nombre = nombre;
         this.nombreDelFabricante = nombreDelFabricante;
         this.modelo = modelo;
         this.precioDeVenta = precioDeVenta;
-        this.aumentoSegunInflación = aumentoSegunInflación;
         this.stock = stock;
     }
 
+    public Componente(){
 
-    public String getTipoDeComponente() {
-        return tipoDeComponente;
     }
 
-    public void setTipoDeComponente(String tipoDeComponente) {
-        this.tipoDeComponente = tipoDeComponente;
+    public Componente(int stock){
+        this.stock = stock;
     }
+
 
     public String getNombreDelFabricante() {
         return nombreDelFabricante;
@@ -53,12 +50,12 @@ public class Componentes {
         this.precioDeVenta = precioDeVenta;
     }
 
-    public int getAumentoSegunInflación() {
-        return aumentoSegunInflación;
+    public String getNombre() {
+        return Nombre;
     }
 
-    public void setAumentoSegunInflación(int aumentoSegunInflación) {
-        this.aumentoSegunInflación = aumentoSegunInflación;
+    public void setNombre(String nombre) {
+        Nombre = nombre;
     }
 
     public int getStock() {

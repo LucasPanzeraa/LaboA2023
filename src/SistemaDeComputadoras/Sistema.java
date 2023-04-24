@@ -1,4 +1,4 @@
-package src.Web;
+package src.SistemaDeComputadoras;
 
 import src.Comida.Pedido;
 import src.Comida.Plato;

@@ -1,6 +1,6 @@
-package src.Web;
+package src.SistemaDeComputadoras;
 
-public class Impresora extends src.Web.DispositivosSalida {
+public class Impresora extends DispositivosSalida {
 
     private String metodoDeimpresion;
 
