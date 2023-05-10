@@ -1,12 +1,11 @@
 package src.Deporte;
-
-import src.Deporte.CurlingEquipo;
+import src.Fechas.Dia;
+import src.Fechas.Turno;
 
 public class Disponibilidad {
 
-    private String horarioPartido;
-    private int dia;
-
+    private Turno turno;
+    private Dia dia;
 
     public void DisposicionHoraria(CurlingEquipo equipo1, CurlingEquipo equipo2){
 

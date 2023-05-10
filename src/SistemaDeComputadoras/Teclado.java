@@ -2,7 +2,7 @@ package src.SistemaDeComputadoras;
 
 public class Teclado extends DispositivosEntrada {
 
-    public Teclado(String tipoDeConector, int puertoDeEntrada) {
-        super(tipoDeConector, puertoDeEntrada);
+    public Teclado(int puertosValidos, String tipoDeConector) {
+        super(puertosValidos, tipoDeConector);
     }
 }
