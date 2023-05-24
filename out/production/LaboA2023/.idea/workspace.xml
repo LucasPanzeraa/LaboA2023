@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="Ejercicios 1,2,3 unidad2">
-      <change afterPath="$PROJECT_DIR$/src/Llamadas/ListaDeLlamada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Llamadas/Llamada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sensores/Alarma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sensores/DetectorDeHumo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sensores/SensorComplejo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sensores/SensorDePresion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sensores/SensorDeTemperatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Personas/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personas/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <list id="1bb17677-1f58-4c8a-9031-a8de844adf83" name="87" comment="" />
     <option name="SHOW_DIALOG" value="false" />

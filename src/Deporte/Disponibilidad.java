@@ -6,7 +6,7 @@ public class Disponibilidad {
 
     private Turno turno;
     private Dia dia;
-
+/*
     public void DisposicionHoraria(CurlingEquipo equipo1, CurlingEquipo equipo2){
 
         for (int i = 0; i < equipo1.horarioMañana.size(); i ++){
@@ -39,6 +39,6 @@ public class Disponibilidad {
         }
     }
 
-
+*/
 
 }
