@@ -1,4 +1,4 @@
-package src.SistemaDeComputadoras;
+package src.Sistema;
 
 public class Perisfericos extends Componente{
     private int puertosValidos;

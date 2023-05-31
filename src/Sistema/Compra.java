@@ -1,6 +1,5 @@
-package src.SistemaDeComputadoras;
+package src.Sistema;
 
-import src.Pagos.Efectivo;
 import src.Pagos.MetodoDePago;
 import src.Pagos.Targeta;
 import src.Personas.Cliente;

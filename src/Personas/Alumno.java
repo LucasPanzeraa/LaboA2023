@@ -1,7 +1,12 @@
 package src.Personas;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+
 import src.Educacion.Materia;
+import src.Fechas.DiaHabiles;
 
 public class Alumno extends Persona{
     private ArrayList<Materia>materias;
@@ -36,7 +41,5 @@ public class Alumno extends Persona{
         promedio = promedio / materias.size();
         return promedio;
     }
-
-
 
 }

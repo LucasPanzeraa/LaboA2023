@@ -1,6 +1,4 @@
-package src.SistemaDeComputadoras;
-
-import src.Personas.Persona;
+package src.Sistema;
 
 public class DispositivosEntrada extends Perisfericos {
 

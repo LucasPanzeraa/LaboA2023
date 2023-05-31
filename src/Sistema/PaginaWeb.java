@@ -1,6 +1,5 @@
-package src.SistemaDeComputadoras;
+package src.Sistema;
 
-import src.Comida.Pedido;
 import src.Pagos.MetodoDePago;
 import src.Personas.Cliente;
 

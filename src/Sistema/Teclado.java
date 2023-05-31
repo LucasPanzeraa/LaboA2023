@@ -1,4 +1,4 @@
-package src.SistemaDeComputadoras;
+package src.Sistema;
 
 public class Teclado extends DispositivosEntrada {
 

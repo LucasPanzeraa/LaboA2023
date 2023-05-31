@@ -1,4 +1,4 @@
-package src.SistemaDeComputadoras;
+package src.Sistema;
 
 import src.Comida.Pedido;
 import src.Comida.Plato;
@@ -8,7 +8,7 @@ import src.Personas.Profesor;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Sistema {
+public class SistemaBuffet {
 
     private ArrayList<Alumno> listaDeAlumnos;
     private ArrayList<Profesor> listaDeProfesores;
