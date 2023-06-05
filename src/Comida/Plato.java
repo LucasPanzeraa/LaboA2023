@@ -4,6 +4,7 @@ public class Plato {
 
     private String nombre;
     private int precio;
+    private int calorias;
 
 
 
@@ -11,9 +12,10 @@ public class Plato {
         nombre = "CheguMila";
         precio = 600;
     }
-    public Plato(String nombre, int precio) {
+
+    public Plato(String nombre, int calorias) {
         this.nombre = nombre;
-        this.precio = precio;
+        this.calorias = calorias;
     }
 
     public String getNombre() {
@@ -30,5 +32,13 @@ public class Plato {
 
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+
+    public int getCalorias() {
+        return calorias;
+    }
+
+    public void setCalorias(int calorias) {
+        this.calorias = calorias;
     }
 }

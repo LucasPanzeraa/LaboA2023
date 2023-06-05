@@ -7,6 +7,8 @@ import java.util.Date;
 public class Persona {
     private String nombre;
     private String apellido;
+    int peso;
+    private int altura;
     private int edad;
     private int teléfono;
     private Date fehcaDeNacimiento;
@@ -17,11 +19,25 @@ public class Persona {
         this.edad = edad;
     }
 
+    public Persona(String nombre, String apellido, Date fehcaDeNacimiento) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.fehcaDeNacimiento = fehcaDeNacimiento;
+    }
+
     public Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
+    public Persona(String nombre, String apellido, int peso, int altura, int edad, Date fehcaDeNacimiento) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.peso = peso;
+        this.altura = altura;
+        this.edad = edad;
+        this.fehcaDeNacimiento = fehcaDeNacimiento;
+    }
 
     public Persona(String nombre, String apellido, int teléfono, Date fehcaDeNacimiento) {
         this.nombre = nombre;
@@ -82,4 +98,5 @@ public class Persona {
     {
         System.out.println("Su persona se llama " + nombre + " tiene " + edad + " años y vive en " + direccion);
     }
+
 }
