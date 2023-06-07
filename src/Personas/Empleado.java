@@ -20,8 +20,12 @@ public class Empleado extends Persona {
         this.listaDeAsistencia = listaDeAsistencia;
     }
 
-
-
+    public Empleado() {
+        super("nombre", 1);
+        DNI = 35476890;
+        pais = "pais";
+        numeroDeTelefono = 1123456789;
+    }
 
     public Empleado(String nombre, String apellido, int DNI, String pais, int numeroDeTelefono) {
         super(nombre, apellido);

@@ -2,22 +2,29 @@ package src.Llamadas;
 
 import src.Personas.Empleado;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class ListaDeLlamada {
 
-    private ArrayList<Llamada>listaDeLlamada;
+    private HashSet<Llamada> listaDeLlamada;
+    private HashSet<Empleado> listaDeEmpleados;
 
-    public ListaDeLlamada(ArrayList<Llamada> listaDeLlamada) {
+    public ListaDeLlamada(HashSet<Llamada> listaDeLlamada) {
         this.listaDeLlamada = listaDeLlamada;
     }
 
-    public ArrayList<Llamada> getListaDeLlamada() {
+    public HashSet<Llamada> getListaDeLlamada() {
         return listaDeLlamada;
     }
 
-    public void setListaDeLlamada(ArrayList<Llamada> listaDeLlamada) {
+    public void setListaDeLlamada(HashSet<Llamada> listaDeLlamada) {
         this.listaDeLlamada = listaDeLlamada;
+    }
+
+    public void hacerLlamada(Llamada llamada){
+        listaDeLlamada.add(llamada);
+        listaDeEmpleados.add(llamada.getEmpleadoOrigen());
+        listaDeEmpleados.add(llamada.getEmpleadoDestino());
     }
 
 
@@ -25,26 +32,40 @@ public class ListaDeLlamada {
         int duracionTotal = 0;
         for (Llamada llamada: listaDeLlamada){
             if (llamada.getEmpleadoOrigen() == empleado ){
-                duracionTotal = duracionTotal + llamada.duracionDeLlamada;
+                duracionTotal = duracionTotal + llamada.getDuracionDeLlamada();
             }
         }
         return duracionTotal;
     }
 
-    public void rankingLlamadas(){
-        int d1 = 0;
-        int d2 = 0;
-        int d3 = 0;
-        Empleado primero;
-        Empleado segundo;
-        Empleado tercero;
+    public Integer duracionTotal(Empleado empleado){
+        int duraciones = 0;
 
-        for (Llamada llamada : listaDeLlamada) {
-
+        for ( Llamada lista : listaDeLlamada ){
+            if (lista.getEmpleadoOrigen().equals(empleado)){
+                duraciones += lista.getDuracionDeLlamada();
+            }
         }
+        return duraciones;
     }
+    public void rankingLlamadas(){
 
-    public static void main(String[] args) {
+        Empleado primero = new Empleado();
+        Empleado segundo = new Empleado();
+        Empleado tercero = new Empleado();
 
+        for ( Empleado listaEmpleado : listaDeEmpleados ) {
+            for (Llamada lista : listaDeLlamada) {
+                if (duracionTotal(listaEmpleado) > duracionTotal(primero)){
+                    primero = lista.getEmpleadoOrigen();
+                }
+                else if(duracionTotal(listaEmpleado) > duracionTotal(segundo)){
+                    segundo = lista.getEmpleadoOrigen();
+                }
+                else if (duracionTotal(listaEmpleado) > duracionTotal(tercero)){
+                    tercero = lista.getEmpleadoOrigen();
+                }
+            }
+        }
     }
 }

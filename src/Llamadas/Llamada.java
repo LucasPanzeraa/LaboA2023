@@ -5,10 +5,10 @@ import src.Personas.Empleado;
 import java.util.Date;
 
 public class Llamada {
-    Empleado empleadoOrigen;
-    Empleado empleadoDestino;
-    Date fechaLlamada;
-    int duracionDeLlamada;
+    private Empleado empleadoOrigen;
+    private Empleado empleadoDestino;
+    private Date fechaLlamada;
+    private int duracionDeLlamada;
 
     public Llamada(Empleado empleadoOrigen, Empleado empleadoDestino, Date fechaLlamada, int duracionDeLlamada) {
         this.empleadoOrigen = empleadoOrigen;

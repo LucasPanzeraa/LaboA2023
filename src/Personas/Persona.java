@@ -2,6 +2,7 @@ package src.Personas;
 
 import src.Fechas.Fecha;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Persona {
@@ -11,7 +12,7 @@ public class Persona {
     private int altura;
     private int edad;
     private int teléfono;
-    private Date fehcaDeNacimiento;
+    private LocalDate fehcaDeNacimiento;
     private String direccion;
 
     public Persona(String nombre, int edad) {
@@ -19,7 +20,7 @@ public class Persona {
         this.edad = edad;
     }
 
-    public Persona(String nombre, String apellido, Date fehcaDeNacimiento) {
+    public Persona(String nombre, String apellido, LocalDate fehcaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fehcaDeNacimiento = fehcaDeNacimiento;
@@ -30,7 +31,7 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public Persona(String nombre, String apellido, int peso, int altura, int edad, Date fehcaDeNacimiento) {
+    public Persona(String nombre, String apellido, int peso, int altura, int edad, LocalDate fehcaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.peso = peso;
@@ -39,7 +40,7 @@ public class Persona {
         this.fehcaDeNacimiento = fehcaDeNacimiento;
     }
 
-    public Persona(String nombre, String apellido, int teléfono, Date fehcaDeNacimiento) {
+    public Persona(String nombre, String apellido, int teléfono, LocalDate fehcaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.teléfono = teléfono;
@@ -62,11 +63,11 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public Date getFehcaDeNacimiento() {
+    public LocalDate getFehcaDeNacimiento() {
         return fehcaDeNacimiento;
     }
 
-    public void setFehcaDeNacimiento(Date fehcaDeNacimiento) {
+    public void setFehcaDeNacimiento(LocalDate fehcaDeNacimiento) {
         this.fehcaDeNacimiento = fehcaDeNacimiento;
     }
 
@@ -92,6 +93,22 @@ public class Persona {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
     }
 
     public void mostrarDatos (String nombre, int edad, String direccion)
