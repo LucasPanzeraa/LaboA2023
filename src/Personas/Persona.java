@@ -1,9 +1,8 @@
 package src.Personas;
 
-import src.Fechas.Fecha;
 
 import java.time.LocalDate;
-import java.util.Date;
+
 
 public class Persona {
     private String nombre;
@@ -12,7 +11,7 @@ public class Persona {
     private int altura;
     private int edad;
     private int teléfono;
-    private LocalDate fehcaDeNacimiento;
+    private LocalDate fechaDeNacimiento;
     private String direccion;
 
     public Persona(String nombre, int edad) {
@@ -23,7 +22,7 @@ public class Persona {
     public Persona(String nombre, String apellido, LocalDate fehcaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.fehcaDeNacimiento = fehcaDeNacimiento;
+        this.fechaDeNacimiento = fehcaDeNacimiento;
     }
 
     public Persona(String nombre, String apellido) {
@@ -37,14 +36,14 @@ public class Persona {
         this.peso = peso;
         this.altura = altura;
         this.edad = edad;
-        this.fehcaDeNacimiento = fehcaDeNacimiento;
+        this.fechaDeNacimiento = fehcaDeNacimiento;
     }
 
     public Persona(String nombre, String apellido, int teléfono, LocalDate fehcaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.teléfono = teléfono;
-        this.fehcaDeNacimiento = fehcaDeNacimiento;
+        this.fechaDeNacimiento = fehcaDeNacimiento;
     }
 
     public int getTeléfono() {
@@ -63,12 +62,12 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public LocalDate getFehcaDeNacimiento() {
-        return fehcaDeNacimiento;
+    public LocalDate getFechaDeNacimiento() {
+        return fechaDeNacimiento;
     }
 
-    public void setFehcaDeNacimiento(LocalDate fehcaDeNacimiento) {
-        this.fehcaDeNacimiento = fehcaDeNacimiento;
+    public void setFechaDeNacimiento(LocalDate fechaDeNacimiento) {
+        this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
     public String getNombre() {

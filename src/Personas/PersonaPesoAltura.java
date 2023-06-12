@@ -2,6 +2,7 @@ package src.Personas;
 
 import src.Fechas.Fecha;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,8 +11,8 @@ public class PersonaPesoAltura extends Persona{
 
     private HashMap <Fecha, Integer > fechaPeso;
     private HashMap <Fecha, Integer >fechaAltura;
-    public PersonaPesoAltura(String nombre, String apellido, int edad, Date fehcaDeNacimiento) {
-        super(nombre, apellido, edad, fehcaDeNacimiento);
+    public PersonaPesoAltura(String nombre, String apellido, int edad, LocalDate fechaDeNacimiento) {
+        super(nombre, apellido, edad, fechaDeNacimiento);
     }
 
     public void pesoYFecha (Fecha fecha){

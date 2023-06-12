@@ -1,13 +1,17 @@
 package src.Lugares;
 
-public class Coordenadas {
+import java.util.ArrayList;
+
+public class Coordenadas extends Lugares {
     private int latitud;
     private int altitud;
 
-    public Coordenadas(int latitud, int altitud) {
+    public Coordenadas(String nombre, int código, ArrayList<Coordenadas> listaDeCoordenadas, int latitud, int altitud) {
+        super(nombre, código, listaDeCoordenadas);
         this.latitud = latitud;
         this.altitud = altitud;
     }
+
 
     public int getLatitud() {
         return latitud;
