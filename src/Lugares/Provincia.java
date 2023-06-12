@@ -7,7 +7,7 @@ public class Provincia extends Lugares{
 
     private HashSet<Ciudad> listaDeCiudades;
 
-    public Provincia(String nombre, int código, ArrayList<Coordenadas> listaDeCoordenadas, HashSet<Ciudad> listaDeCiudades) {
+    public Provincia(String nombre, int código, HashSet<Coordenadas> listaDeCoordenadas, HashSet<Ciudad> listaDeCiudades) {
         super(nombre, código, listaDeCoordenadas);
         this.listaDeCiudades = listaDeCiudades;
     }
