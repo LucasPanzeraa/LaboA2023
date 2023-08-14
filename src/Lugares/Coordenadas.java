@@ -1,14 +1,10 @@
 package src.Lugares;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-
-public class Coordenadas extends Lugares {
+public class Coordenadas {
     private int latitud;
     private int altitud;
 
-    public Coordenadas(String nombre, int código, HashSet<Coordenadas> listaDeCoordenadas, int latitud, int altitud) {
-        super(nombre, código, listaDeCoordenadas);
+    public Coordenadas(int latitud, int altitud) {
         this.latitud = latitud;
         this.altitud = altitud;
     }

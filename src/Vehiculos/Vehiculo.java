@@ -1,11 +1,8 @@
 package src.Vehiculos;
 
-import src.Empresas.Empresa;
-
-import java.util.ArrayList;
 import java.util.Date;
 
-public class Vehiculo extends Empresa {
+public class Vehiculo {
 
     private String modelo;
     private String marca;
@@ -13,8 +10,7 @@ public class Vehiculo extends Empresa {
     private int cantidadDeRuedas;
     private Date añoDeFabricacion;
 
-    public Vehiculo(ArrayList<Vehiculo> listaDeVehiculo, String modelo, String marca, String color, int cantidadDeRuedas, Date añoDeFabricacion) {
-        super(listaDeVehiculo);
+    public Vehiculo(String modelo, String marca, String color, int cantidadDeRuedas, Date añoDeFabricacion) {
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
@@ -61,30 +57,4 @@ public class Vehiculo extends Empresa {
     public void setAñoDeFabricacion(Date añoDeFabricacion) {
         this.añoDeFabricacion = añoDeFabricacion;
     }
-
-
-
-    public String MayorCantidad() {
-
-        String mayorCantidad;
-        int cantidadAutos = 0;
-        int cantidadCamiones = 0;
-        for (int i = 0; i < getListaDeVehiculo().size(); i ++){
-
-            if (getListaDeVehiculo().get(i) instanceof Coche){
-                cantidadAutos ++;
-            } else if (getListaDeVehiculo().get(i) instanceof Camioneta){
-                cantidadCamiones ++;
-            }
-        }
-        if (cantidadAutos > cantidadCamiones){
-            mayorCantidad = "Hay más autos";
-        }else{
-            mayorCantidad = "Hay más camiones";
-        }
-        return mayorCantidad;
-    }
-
-
-
 }

@@ -2,7 +2,7 @@ package src.Sensores;
 
 import java.util.Date;
 
-public class Alarma {
+public abstract class Alarma {
 
     private boolean estado;
     private int media;
@@ -53,10 +53,7 @@ public class Alarma {
 
     }
 
-    public void dispararAlarma(){
-        if(media > valorDeUmbral){
-            mensajeDeAlarma();
-        }
-    }
+    public abstract void dispararAlarma(int media,int valorDeUmbral);
+
 
 }

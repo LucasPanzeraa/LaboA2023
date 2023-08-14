@@ -1,12 +1,13 @@
 package src.Lugares;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Barrio extends Lugares {
 
     private int poblacion;
 
-    public Barrio(String nombre, int código, ArrayList<Coordenadas> listaDeCoordenadas, int poblacion) {
+    public Barrio(String nombre, int código, HashSet<Coordenadas> listaDeCoordenadas, int poblacion) {
         super(nombre, código, listaDeCoordenadas);
         this.poblacion = poblacion;
     }

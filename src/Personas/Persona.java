@@ -1,13 +1,11 @@
 package src.Personas;
 
-
 import java.time.LocalDate;
 
-
-public class Persona {
+public abstract class Persona {
     private String nombre;
     private String apellido;
-    int peso;
+    private int peso;
     private int altura;
     private int edad;
     private int teléfono;
@@ -114,5 +112,4 @@ public class Persona {
     {
         System.out.println("Su persona se llama " + nombre + " tiene " + edad + " años y vive en " + direccion);
     }
-
 }

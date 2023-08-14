@@ -9,7 +9,9 @@ public class SensorDePresion extends Alarma{
     }
 
     @Override
-    public void mensajeDeAlarma() {
-        System.out.println( "Sensor de presión activado");
+    public void dispararAlarma(int media, int valorDeUmbral) {
+        if (media > valorDeUmbral){
+            System.out.println( "Sensor de presión activado");
+        }
     }
 }

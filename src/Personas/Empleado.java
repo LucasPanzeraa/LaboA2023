@@ -2,8 +2,8 @@ package src.Personas;
 
 import src.Fechas.DiaHabiles;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.HashSet;
 
 public class Empleado extends Persona {
@@ -14,8 +14,8 @@ public class Empleado extends Persona {
     private HashSet<DiaHabiles> diasPresente;
     private HashSet<LocalDateTime> listaDeAsistencia;
 
-    public Empleado(String nombre, String apellido, int teléfono, Date fehcaDeNacimiento, HashSet<DiaHabiles> diasPresente, HashSet<LocalDateTime> listaDeAsistencia) {
-        super(nombre, apellido, teléfono, fehcaDeNacimiento);
+    public Empleado(String nombre, String apellido, int teléfono, LocalDate fechaDeNacimiento, HashSet<DiaHabiles> diasPresente, HashSet<LocalDateTime> listaDeAsistencia) {
+        super(nombre, apellido, teléfono, fechaDeNacimiento);
         this.diasPresente = diasPresente;
         this.listaDeAsistencia = listaDeAsistencia;
     }

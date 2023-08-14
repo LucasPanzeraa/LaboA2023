@@ -9,7 +9,9 @@ public class DetectorDeHumo extends Alarma{
     }
 
     @Override
-    public void mensajeDeAlarma() {
-        System.out.println("Sensor de humo activado: Llamando a los bomberos");
+    public void dispararAlarma(int media, int valorDeUmbral) {
+        if (media > valorDeUmbral){
+            System.out.println("Humo detectado, corre wachin");
+        }
     }
 }

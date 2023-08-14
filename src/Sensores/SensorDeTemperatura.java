@@ -9,7 +9,9 @@ public class SensorDeTemperatura extends Alarma{
     }
 
     @Override
-    public void mensajeDeAlarma() {
-        System.out.println("¡Cuidado! La temperatura sube" );
+    public void dispararAlarma(int media, int valorDeUmbral) {
+        if (media > valorDeUmbral){
+            System.out.println("¡Cuidado! La temperatura sube" );
+        }
     }
 }

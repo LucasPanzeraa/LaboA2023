@@ -3,7 +3,7 @@ package src.Lugares;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class Lugares {
+public abstract class Lugares {
     private String nombre;
     private int código;
     private HashSet<Coordenadas> listaDeCoordenadas;
@@ -38,9 +38,5 @@ public class Lugares {
         this.listaDeCoordenadas = listaDeCoordenadas;
     }
 
-    public int CantidadDePoblacion(){
-        int poblacion = 0;
-
-        return poblacion;
-    }
+    public abstract int CantidadDePoblacion();
 }

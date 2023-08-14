@@ -7,7 +7,7 @@ public class Ciudad extends Lugares{
 
     private HashSet<Barrio> listaDeBarrios;
 
-    public Ciudad(String nombre, int código, ArrayList<Coordenadas> listaDeCoordenadas, HashSet<Barrio> listaDeBarrios) {
+    public Ciudad(String nombre, int código, HashSet<Coordenadas> listaDeCoordenadas, HashSet<Barrio> listaDeBarrios) {
         super(nombre, código, listaDeCoordenadas);
         this.listaDeBarrios = listaDeBarrios;
     }
