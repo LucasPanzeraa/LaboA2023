@@ -23,6 +23,12 @@ public abstract class Persona {
         this.fechaDeNacimiento = fehcaDeNacimiento;
     }
 
+    public Persona() {
+        this.nombre = "nombre";
+        this.apellido = "apellido";
+        this.fechaDeNacimiento = LocalDate.now();
+    }
+
     public Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -43,6 +49,7 @@ public abstract class Persona {
         this.teléfono = teléfono;
         this.fechaDeNacimiento = fehcaDeNacimiento;
     }
+
 
     public int getTeléfono() {
         return teléfono;
