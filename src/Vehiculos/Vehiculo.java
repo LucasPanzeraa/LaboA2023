@@ -2,7 +2,7 @@ package src.Vehiculos;
 
 import java.util.Date;
 
-public class Vehiculo {
+public abstract class Vehiculo {
 
     private String modelo;
     private String marca;

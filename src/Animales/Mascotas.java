@@ -30,7 +30,7 @@ public abstract class Mascotas {
     }
 
 
-    public abstract void saludo();
-
-
+    public abstract String saludo();
+    public abstract void alimentar();
+    public abstract Mascotas tipoMascota();
 }

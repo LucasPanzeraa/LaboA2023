@@ -1,15 +1,36 @@
 package src.Animales;
 
+import src.Personas.Dueño;
 import src.Personas.Persona;
 
 public class Pajaro extends Mascotas{
+    int alegria;
 
-    public Pajaro(String nombre, Persona dueño) {
+    public Pajaro(String nombre, Dueño dueño) {
         super(nombre, dueño);
+        alegria = 0;
     }
 
     @Override
-    public void saludo() {
-        System.out.println("Poi Pio");
+    public String saludo() {
+        String saludo = "";
+        for (int i = 0; i< alegria; i++){
+            saludo = saludo + " pio";
+        }
+        if (alegria > 1){
+            alegria --;
+        }
+        return saludo;
+    }
+
+    @Override
+    public void alimentar() {
+        alegria ++;
+    }
+
+    @Override
+    public Mascotas tipoMascota() {
+        Pajaro gato = new Gato("nombre", new Dueño());
+        return gato;
     }
 }

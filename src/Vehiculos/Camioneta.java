@@ -11,8 +11,8 @@ public class Camioneta extends Vehiculo {
     private int cargaActual;
 
 
-    public Camioneta(ArrayList<Vehiculo> listaDeVehiculo, String modelo, String marca, String color, int cantidadDeRuedas, Date añoDeFabricacion, String patente, int capacidadDeCarga, int cargaActual) {
-        super(listaDeVehiculo, modelo, marca, color, cantidadDeRuedas, añoDeFabricacion);
+    public Camioneta(String modelo, String marca, String color, int cantidadDeRuedas, Date añoDeFabricacion, String patente, int capacidadDeCarga, int cargaActual) {
+        super(modelo, marca, color, cantidadDeRuedas, añoDeFabricacion);
         this.patente = patente;
         this.capacidadDeCarga = capacidadDeCarga;
         this.cargaActual = cargaActual;
