@@ -27,4 +27,9 @@ public class Cantor extends Mascotas {
     public void alimentar() {
         alegria++;
     }
+
+    @Override
+    public void tipoMascota() {
+        System.out.println("la mascota elegida es un gato");
+    }
 }

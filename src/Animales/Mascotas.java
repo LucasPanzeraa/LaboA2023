@@ -32,5 +32,5 @@ public abstract class Mascotas {
 
     public abstract String saludo();
     public abstract void alimentar();
-    public abstract Mascotas tipoMascota();
+    public abstract void tipoMascota();
 }

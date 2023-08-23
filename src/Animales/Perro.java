@@ -28,8 +28,7 @@ public class Perro extends Mascotas{
     }
 
     @Override
-    public Mascotas tipoMascota() {
-        Perro perro = new Perro("nombre", new Dueño());
-        return perro;
+    public void tipoMascota() {
+        System.out.println("la mascota elegida es un gato");
     }
 }

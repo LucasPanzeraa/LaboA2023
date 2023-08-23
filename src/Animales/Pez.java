@@ -37,4 +37,9 @@ public class Pez extends Mascotas{
     public void alimentar (){
         setVidaActuales(vidaActuales ++);
     }
+
+    @Override
+    public void tipoMascota() {
+        System.out.println("la mascota elegida es un gato");
+    }
 }
