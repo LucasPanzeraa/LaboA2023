@@ -1,7 +1,6 @@
 package src.Animales;
 
 import src.Personas.Dueño;
-import src.Personas.Persona;
 
 public abstract class Mascotas {
 

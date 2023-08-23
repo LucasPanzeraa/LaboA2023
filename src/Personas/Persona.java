@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public abstract class Persona {
     private String nombre;
     private String apellido;
+    private int DNI;
     private int peso;
     private int altura;
     private int edad;
@@ -23,6 +24,7 @@ public abstract class Persona {
         this.fechaDeNacimiento = fehcaDeNacimiento;
     }
 
+
     public Persona() {
         this.nombre = "nombre";
         this.apellido = "apellido";
@@ -34,20 +36,21 @@ public abstract class Persona {
         this.apellido = apellido;
     }
 
-    public Persona(String nombre, String apellido, int peso, int altura, int edad, LocalDate fehcaDeNacimiento) {
+
+    public Persona(String nombre, String apellido, int DNI, LocalDate fechaDeNacimiento) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.DNI = DNI;
+        this.fechaDeNacimiento = fechaDeNacimiento;
+    }
+
+    public Persona(String nombre, String apellido, int peso, int altura, int edad, LocalDate fechaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.peso = peso;
         this.altura = altura;
         this.edad = edad;
-        this.fechaDeNacimiento = fehcaDeNacimiento;
-    }
-
-    public Persona(String nombre, String apellido, int teléfono, LocalDate fehcaDeNacimiento) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.teléfono = teléfono;
-        this.fechaDeNacimiento = fehcaDeNacimiento;
+        this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
 

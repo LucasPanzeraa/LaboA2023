@@ -76,6 +76,11 @@ public class MenuMascotas {
 
     public void saludar(String nombreDueño, String nombreMascota) {
         Mascotas mascotaElegida = buscarMascota(nombreMascota);
+        if (mascotaElegida instanceof Pez){
+            if (((Pez) mascotaElegida).getVidaActuales() == 0){
+                listaDeMascotas.remove(mascotaElegida);
+            }
+        }
 
         if (mascotaElegida.getDueño() == buscarDueño(nombreDueño)) {
             System.out.println(mascotaElegida.saludo());
