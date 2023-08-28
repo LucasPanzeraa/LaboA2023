@@ -11,7 +11,7 @@ public class JugadoresCurling extends Persona{
 
 
     public JugadoresCurling(String nombre, int edad, String nombre1, Date fechaDeNacimiento, int numeroDeCamiseta, boolean capitan) {
-        super(nombre, edad);
+        super(nombre);
         this.nombre = nombre1;
         this.fechaDeNacimiento = fechaDeNacimiento;
         this.numeroDeCamiseta = numeroDeCamiseta;
@@ -24,10 +24,6 @@ public class JugadoresCurling extends Persona{
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public Date getFechaDeNacimiento() {
-        return fechaDeNacimiento;
     }
 
     public void setFechaDeNacimiento(Date fechaDeNacimiento) {

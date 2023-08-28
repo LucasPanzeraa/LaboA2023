@@ -2,20 +2,26 @@ package src.Politica;
 
 public class PartidoPolitico {
 
-    private NombrePartido Nombre;
+    private NombrePartido nombre;
     private Candidato candidato;
 
-    public PartidoPolitico(NombrePartido nombre, Candidato candidato) {
-        Nombre = nombre;
+    public PartidoPolitico( Candidato candidato) {
+        this.nombre = candidato.getPartidoPolitico();
         this.candidato = candidato;
     }
 
+
+    public PartidoPolitico() {
+        nombre = NombrePartido.ELPOLIAVANZA;
+        candidato = new Candidato();
+    }
+
     public NombrePartido getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(NombrePartido nombre) {
-        Nombre = nombre;
+        nombre = nombre;
     }
 
     public Candidato getCandidato() {

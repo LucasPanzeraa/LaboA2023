@@ -64,12 +64,6 @@ public class NumeroLetraPersona {
 
         System.out.println("Ingrese solo el nombre no el apellido, dale al enter y pone la edad: ");
 
-
-        for (int i = 0; i < cantidadPersonas; i++){
-
-            personas.add(new Persona(entrada.next(), entrada.nextInt() ) );
-        }
-
         String personasMas30 = " ";
 
         for (Persona persona : personas){

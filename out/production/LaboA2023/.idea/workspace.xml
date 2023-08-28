@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="Ejercicios 1,2,3 unidad2">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="d920da64-fe23-474e-a6bb-efa9a694977b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Lugares/Provincias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lugares/Provincias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Politica/Candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/Candidato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Politica/NombrePartido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/NombrePartido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Politica/PartidoPolitico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/PartidoPolitico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Politica/SistemaElecciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/SistemaElecciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Politica/Votante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/Votante.java" afterDir="false" />
     </list>
-    <list id="1bb17677-1f58-4c8a-9031-a8de844adf83" name="87" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,13 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/Comida/Pedido.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2N33Ed3qBRTM3vDbevetcNytzXz" />
+  <component name="ProjectId" id="2QmfYxpD2KFkLF0UhdOgEZE0qx1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,68 +39,18 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/panzera-brandon/LaboA2023&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/capitanteemo/Escritorio/LaboA2023&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Deporte" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="CD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CD" />
-      <module name="LaboA2023" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="LaboA2023" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumeroLetraPersona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumeroLetraPersona" />
-      <module name="LaboA2023" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CD" />
-        <item itemvalue="Application.NumeroLetraPersona" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5baaf35f-bb11-4d02-883c-cb3886099867" name="Changes" comment="" />
-      <changelist id="1bb17677-1f58-4c8a-9031-a8de844adf83" name="87" comment="" />
-      <created>1678878827733</created>
+      <changelist id="d920da64-fe23-474e-a6bb-efa9a694977b" name="Changes" comment="" />
+      <created>1685963728376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678878827733</updated>
+      <updated>1685963728376</updated>
     </task>
-    <task id="LOCAL-00001" summary="Ejercicios 1,2,3 unidad2">
-      <created>1679921300492</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679921300492</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,19 +63,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ejercicios 1,2,3 unidad2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicios 1,2,3 unidad2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

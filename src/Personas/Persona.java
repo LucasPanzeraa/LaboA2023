@@ -13,7 +13,7 @@ public abstract class Persona {
     private LocalDate fechaDeNacimiento;
     private String direccion;
 
-    public Persona(String nombre, int edad) {
+    public Persona(String nombre) {
         this.nombre = nombre;
         this.edad = edad;
     }

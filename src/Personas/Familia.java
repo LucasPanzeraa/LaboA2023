@@ -49,7 +49,7 @@ public class Familia {
         boolean primero = false;
 
         for ( Familiar lista : listaDeFamiliares ){
-            if (lista.caloriasConsumidas() < menosCalorias  primero == false){
+            if (lista.caloriasConsumidas() < menosCalorias || primero == false){
                 menosCalorias = lista.caloriasConsumidas();
                 familiarFlaquito = lista;
             }
