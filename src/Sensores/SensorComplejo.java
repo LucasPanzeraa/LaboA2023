@@ -43,4 +43,5 @@ public class SensorComplejo {
             System.out.println("El valor medio esta por las nubes");
         }
     }
+
 }

@@ -1,4 +1,4 @@
-package src.Sistema;
+package src.Lugares;
 
 import src.Lugares.Continente;
 import src.Lugares.Lugares;

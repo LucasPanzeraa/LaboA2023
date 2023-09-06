@@ -1,6 +1,4 @@
-package src.Empresas;
-
-import src.Empresas.Operario;
+package src.Empresa;
 
 public class Tecnico extends Operario {
 

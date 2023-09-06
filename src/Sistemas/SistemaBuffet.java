@@ -1,4 +1,4 @@
-package src.Sistema;
+package src.Sistemas;
 
 import src.Comida.Pedido;
 import src.Comida.Plato;

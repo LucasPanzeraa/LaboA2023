@@ -1,4 +1,4 @@
-package src.Sistema;
+package src.Sistemas;
 
 import src.Pagos.MetodoDePago;
 import src.Personas.Cliente;
@@ -46,5 +46,9 @@ public class PaginaWeb {
             lista.setStock(lista.getStock()-1);
         }
         listaDeCompras.add(compra);
+    }
+
+    public static void main(String[] args) {
+        
     }
 }

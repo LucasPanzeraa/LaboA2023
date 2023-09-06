@@ -1,4 +1,4 @@
-package src.Sistema;
+package src.Sistemas;
 
 public class DispositivosEntrada extends Perisfericos {
 

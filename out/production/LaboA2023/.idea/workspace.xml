@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d920da64-fe23-474e-a6bb-efa9a694977b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Lugares/Provincias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lugares/Provincias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Politica/Candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/Candidato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Politica/NombrePartido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/NombrePartido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Politica/PartidoPolitico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/PartidoPolitico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Politica/SistemaElecciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/SistemaElecciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Politica/Votante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Politica/Votante.java" afterDir="false" />
+    <list default="true" id="55a10260-2843-43c6-953d-2fc336e50361" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/manejoDeExcepcion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -30,7 +26,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2QmfYxpD2KFkLF0UhdOgEZE0qx1" />
+  <component name="ProjectId" id="2UhXZtGYHVa5V8BquA0lHmdEyTN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,30 +37,18 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/capitanteemo/Escritorio/LaboA2023&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d920da64-fe23-474e-a6bb-efa9a694977b" name="Changes" comment="" />
-      <created>1685963728376</created>
+      <changelist id="55a10260-2843-43c6-953d-2fc336e50361" name="Changes" comment="" />
+      <created>1693392846554</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685963728376</updated>
+      <updated>1693392846554</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

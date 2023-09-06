@@ -1,4 +1,4 @@
-package src.Empresas;
+package src.Empresa;
 
 public enum Editoriales {
     KAPELUSZ ("Kapelusz"), SUDAMERICANA ("Sudamericana"), ATLANTIDA ("Atlántida"), ELATENEO ("ElAteneo"), INTERZONA ("Interzona"), SUR ("Sur"), ALIANZA ("Alianza");

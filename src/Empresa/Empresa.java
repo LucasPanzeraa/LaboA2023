@@ -1,4 +1,4 @@
-package src.Empresas;
+package src.Empresa;
 
 import src.Personas.Empleado;
 import src.Vehiculos.Camioneta;

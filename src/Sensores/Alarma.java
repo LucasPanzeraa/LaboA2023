@@ -55,5 +55,4 @@ public abstract class Alarma {
 
     public abstract void dispararAlarma(int media,int valorDeUmbral);
 
-
 }

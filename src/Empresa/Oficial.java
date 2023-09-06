@@ -1,4 +1,4 @@
-package src.Empresas;
+package src.Empresa;
 
 public class Oficial extends Operario {
 

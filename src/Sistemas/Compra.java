@@ -1,4 +1,4 @@
-package src.Sistema;
+package src.Sistemas;
 
 import src.Pagos.MetodoDePago;
 import src.Pagos.Targeta;
