@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55a10260-2843-43c6-953d-2fc336e50361" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/manejoDeExcepcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sistemas/PaginaWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sistemas/PaginaWeb.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="src.Lugares" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

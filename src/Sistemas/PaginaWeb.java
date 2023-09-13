@@ -42,10 +42,19 @@ public class PaginaWeb {
 
     public void hacerCompra(ArrayList<Componente> listaDeComponentes, Cliente cliente, MetodoDePago metodoDePago){
         Compra compra = new Compra(listaDeComponentes, cliente, metodoDePago);
-        for (Componente lista:listaDeComponentes) {
-            lista.setStock(lista.getStock()-1);
+        try{
+            for (Componente lista:listaDeComponentes) {
+                lista.setStock(lista.getStock() - 1);
+
+                if (lista.getStock() < 0) {
+                    throw new NullPointerException("Stock insuficiente");
+                }
+                System.out.println("Hay stock");
+            }
+            listaDeCompras.add(compra);
+        }catch (NullPointerException e) {
+            System.out.println(e);
         }
-        listaDeCompras.add(compra);
     }
 
     public static void main(String[] args) {

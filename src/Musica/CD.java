@@ -1,4 +1,4 @@
-package src.Objetos;
+package src.Musica;
 
 import src.Musica.Cancion;
 

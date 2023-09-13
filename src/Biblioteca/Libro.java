@@ -1,16 +1,16 @@
-package src.Objetos;
+package src.Biblioteca;
 
 import src.Fechas.Fecha;
+import src.Personas.Autor;
 
 public class Libro {
 
-    String titulo;
-    src.Personas.Persona autor;
-
-    int ISBN;
-    int cantidadDePaginas;
-    String editorial;
-    Fecha fecha;
+    private String titulo;
+    private Autor autor;
+    private int ISBN;
+    private int cantidadDePaginas;
+    private String editorial;
+    private Fecha fecha;
 
 
     public String getTitulo() {
@@ -21,11 +21,11 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public src.Personas.Persona getAutor() {
+    public Autor getAutor() {
         return autor;
     }
 
-    public void setAutor(src.Personas.Persona autor) {
+    public void setAutor(Autor autor) {
         this.autor = autor;
     }
 
@@ -62,7 +62,7 @@ public class Libro {
     }
 
 
-    public Libro(String titulo, src.Personas.Persona autor, int ISBN, int cantidadDePaginas, String editorial, Fecha fecha) {
+    public Libro(String titulo, Autor autor, int ISBN, int cantidadDePaginas, String editorial, Fecha fecha) {
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
@@ -70,6 +70,8 @@ public class Libro {
         this.editorial = editorial;
         this.fecha = fecha;
     }
+
+
 
     public Libro(Fecha fecha) {
         this.fecha = fecha;
