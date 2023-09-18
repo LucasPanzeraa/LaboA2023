@@ -18,6 +18,12 @@ public abstract class Persona {
         this.edad = edad;
     }
 
+    public Persona(String nombre, String apellido, int DNI) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.DNI = DNI;
+    }
+
     public Persona(String nombre, String apellido, LocalDate fehcaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -53,6 +59,13 @@ public abstract class Persona {
         this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
+    public int getDNI() {
+        return DNI;
+    }
+
+    public void setDNI(int DNI) {
+        this.DNI = DNI;
+    }
 
     public int getTeléfono() {
         return teléfono;
