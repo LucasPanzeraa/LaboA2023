@@ -2,6 +2,7 @@ package src.Personas;
 
 import src.Biblioteca.LibroElectronico;
 import src.Biblioteca.Membresia;
+import src.ManejoDeExcepciones.MembresiaExcepcion;
 
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -42,7 +43,5 @@ public class UsuarioBiblioteca extends Persona{
     public void setMembresia(Membresia membresia) {
         this.membresia = membresia;
     }
-
-
 
 }
