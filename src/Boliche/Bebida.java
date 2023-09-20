@@ -1,6 +1,6 @@
 package src.Boliche;
 
-public class Bebida {
+public abstract class Bebida {
     private String nombre;
     private int coeficienteDePositividad;
     private int coeficientedDeNegatividad;
@@ -11,6 +11,12 @@ public class Bebida {
         this.coeficienteDePositividad = coeficienteDePositividad;
         this.coeficientedDeNegatividad = coeficientedDeNegatividad;
         this.stock = stock;
+    }
+
+    public Bebida(String nombre, int coeficienteDePositividad, int coeficientedDeNegatividad) {
+        this.nombre = nombre;
+        this.coeficienteDePositividad = coeficienteDePositividad;
+        this.coeficientedDeNegatividad = coeficientedDeNegatividad;
     }
 
     public String getNombre() {
