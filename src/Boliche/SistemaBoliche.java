@@ -12,8 +12,9 @@ public class SistemaBoliche {
     private HashSet<Boracho> listaDeClientes;
     private HashSet<Bebida> listaDeBebidas;
 
-    public SistemaBoliche(HashSet<Boracho> listaDeClientes) {
+    public SistemaBoliche(HashSet<Boracho> listaDeClientes, HashSet<Bebida> listaDeBebidas) {
         this.listaDeClientes = listaDeClientes;
+        this.listaDeBebidas = listaDeBebidas;
     }
 
     public HashSet<Boracho> getListaDeClientes() {
