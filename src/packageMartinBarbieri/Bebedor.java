@@ -1,10 +1,13 @@
-package packageMartinBarbieri;
+package src.packageMartinBarbieri;
+
+import packageMartinBarbieri.Bebida;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Bebedor extends Persona {
+public class Bebedor extends src.packageMartinBarbieri.Persona {
     private HashMap<Bebida, Integer> bebidasConsumidas;
+
 
 
     public Bebedor(String nombre, String apellido, int dni) {

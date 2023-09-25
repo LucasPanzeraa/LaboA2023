@@ -1,6 +1,8 @@
-package packageMartinBarbieri;
+package src.packageMartinBarbieri;
 
-public class Alcoholica extends Bebida{
+import packageMartinBarbieri.Bebida;
+
+public class Alcoholica extends Bebida {
     private int cantidadAlcohol;
 
     public Alcoholica(String nombre, int cantidadAlcohol) {

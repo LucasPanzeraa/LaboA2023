@@ -1,4 +1,4 @@
-package packageMartinBarbieri;
+package src.packageMartinBarbieri;
 
 public class UsuarioInexistente extends Exception{
     public UsuarioInexistente(String s) {

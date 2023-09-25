@@ -1,4 +1,4 @@
-package packageMartinBarbieri;
+package src.packageMartinBarbieri;
 
 public class BebidaInexistente extends Exception{
 

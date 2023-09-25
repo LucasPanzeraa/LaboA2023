@@ -1,4 +1,6 @@
-package packageMartinBarbieri;
+package src.packageMartinBarbieri;
+
+import packageMartinBarbieri.Bebida;
 
 import java.util.HashMap;
 import java.util.HashSet;

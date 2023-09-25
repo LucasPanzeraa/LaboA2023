@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55a10260-2843-43c6-953d-2fc336e50361" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Sistemas/PaginaWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sistemas/PaginaWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Educacion/CentroEducativo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Intercambios/Coleccionista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Intercambios/MainIntercambio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intercambios/SistemaIntercambios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intercambios/SistemaIntercambios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,7 +41,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/capitanteemo/Escritorio/Main&quot;
   }
 }</component>
   <component name="RecentsManager">
