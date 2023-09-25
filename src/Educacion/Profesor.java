@@ -1,6 +1,8 @@
-package src.Personas;
+package src.Educacion;
 
-public class Profesor extends Persona{
+import src.Personas.Persona;
+
+public class Profesor extends Persona {
 
     private int porcentajeDeDescuento;
 

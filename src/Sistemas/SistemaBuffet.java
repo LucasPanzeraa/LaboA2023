@@ -2,8 +2,8 @@ package src.Sistemas;
 
 import src.Comida.Pedido;
 import src.Comida.Plato;
-import src.Personas.Alumno;
-import src.Personas.Profesor;
+import src.Educacion.Alumno;
+import src.Educacion.Profesor;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,7 +1,7 @@
 package src.Comida;
 
 import src.Personas.Persona;
-import src.Personas.Profesor;
+import src.Educacion.Profesor;
 
 import java.util.Calendar;
 import java.util.Date;
