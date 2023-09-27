@@ -67,11 +67,11 @@ public class Alumno extends Persona implements Aprobado{
     public boolean aprobado() {
         for (Examen examen: listaDeExamenes){
             if (!examen.isAprobado()){
-                System.out.println("Alumno desaprobado");
+                System.out.println(getNombre() + " desaprobado");
                 return false;
             }
         }
-        System.out.println("Alumon aprobado");
+        System.out.println(getNombre() + " aprobado");
         return true;
     }
 }

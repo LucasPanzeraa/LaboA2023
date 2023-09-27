@@ -1,6 +1,6 @@
 package src.Intercambios;
 
-public class PrendaDeRopa{
+public abstract class PrendaDeRopa{
 
     private String color;
     private Materiales material;

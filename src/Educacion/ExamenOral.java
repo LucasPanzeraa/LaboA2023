@@ -8,6 +8,7 @@ public class ExamenOral extends Examen implements Aprobado{
     public ExamenOral(LocalDateTime fechaDeRealizacion, Satisfaccion satisfaccion) {
         super(fechaDeRealizacion);
         this.satisfaccion = satisfaccion;
+        super.setAprobado(aprobado());
     }
 
     public Satisfaccion getSatisfaccion() {

@@ -8,6 +8,7 @@ public class Examen{
 
     public Examen(LocalDateTime fechaDeRealizacion) {
         this.fechaDeRealizacion = fechaDeRealizacion;
+
     }
 
     public LocalDateTime getFechaDeRealizacion() {

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55a10260-2843-43c6-953d-2fc336e50361" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Educacion/CentroEducativo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Intercambios/Coleccionista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Intercambios/MainIntercambio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intercambios/SistemaIntercambios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intercambios/SistemaIntercambios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Educacion/MainEducacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Educacion/Examen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Educacion/Examen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Educacion/ExamenEscritos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Educacion/ExamenEscrito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Educacion/ExamenOral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Educacion/ExamenOral.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,5 +60,16 @@
       <updated>1693392846554</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Intercambios/Remera.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

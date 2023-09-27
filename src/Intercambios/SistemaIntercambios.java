@@ -3,7 +3,6 @@ package src.Intercambios;
 import java.util.HashSet;
 
 public class SistemaIntercambios {
-
     private HashSet<Prestable>listaPrestables;
 
     public SistemaIntercambios(HashSet<Prestable> listaPrestables) {
@@ -25,8 +24,9 @@ public class SistemaIntercambios {
     }
 
     public void prestarAColeccionista (Prestable prestable, Coleccionista coleccionista){
-        if (prestable.prestar()){
+        if (prestable.prestar() && listaPrestables.contains(prestable)){
             coleccionista.getListaDePrestables().add(prestable);
+            listaPrestables.remove(prestable);
         }
     }
 

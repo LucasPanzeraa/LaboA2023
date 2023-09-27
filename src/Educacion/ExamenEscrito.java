@@ -2,14 +2,16 @@ package src.Educacion;
 
 import java.time.LocalDateTime;
 
-public class ExamenEscritos extends Examen implements Aprobado{
+public class ExamenEscrito extends Examen implements Aprobado{
     private double nota;
     private int duracion;
 
-    public ExamenEscritos(LocalDateTime fechaDeRealizacion, double nota, int duracion) {
+    public ExamenEscrito(LocalDateTime fechaDeRealizacion, double nota, int duracion) {
         super(fechaDeRealizacion);
         this.nota = nota;
         this.duracion = duracion;
+        super.setAprobado(aprobado());
+
     }
 
     public double getNota() {

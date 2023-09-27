@@ -1,7 +1,7 @@
 package src.Intercambios;
 
 
-public class Escrito {
+public abstract class Escrito {
 
     private int codigo;
     private String titulo;
