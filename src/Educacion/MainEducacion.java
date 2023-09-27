@@ -12,7 +12,7 @@ public class MainEducacion {
         HashSet<Examen> listaDeExamen = new HashSet<>();
         listaDeExamen.add(examen);
         listaDeExamen.add(examen1);
-        listaDeExamen.add(examen2);
+        psglistaDeExamen.add(examen2);
 
         Examen examen3 = new ExamenEscrito(LocalDateTime.now(), 4, 60);
         HashSet<Examen> listaDeExamen1 = new HashSet<>();
