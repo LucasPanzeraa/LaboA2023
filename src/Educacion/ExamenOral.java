@@ -21,6 +21,6 @@ public class ExamenOral extends Examen implements Aprobado{
 
     @Override
     public boolean aprobado() {
-        return satisfaccion.compareTo(Satisfaccion.INSUFICIENTE) != 1;
+        return satisfaccion.compareTo(Satisfaccion.INSUFICIENTE) != 0;
     }
 }
