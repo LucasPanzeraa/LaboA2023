@@ -1,6 +1,7 @@
 package src.Animales;
 
 import src.Politica.Mensajeros;
+import src.Politica.NombrePartido;
 
 public class PalomaMensajera extends Ave implements Mensajeros {
 
@@ -20,7 +21,11 @@ public class PalomaMensajera extends Ave implements Mensajeros {
     }
 
     @Override
-    public void enviarMensaje() {
-
+    public void enviarMensaje(NombrePartido nombre) {
+        if (vuelaSola){
+            System.out.println("Lanzando un papelito que dice: Vote por el partido" + nombre + "para un mejor futuro");
+        }else {
+            System.out.println("La paloma no aprendió a volar sola todavía");
+        }
     }
 }

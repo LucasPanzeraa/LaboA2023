@@ -72,5 +72,10 @@ public class PartidoPolitico {
         listaDeMensajeros.add(mensajero);
     }
 
+    public void hacerPromocion (){
+        for (Mensajeros mensajero : listaDeMensajeros){
+            mensajero.enviarMensaje(nombre);
+        }
+    }
 
 }

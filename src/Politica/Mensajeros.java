@@ -1,5 +1,5 @@
 package src.Politica;
 
 public interface Mensajeros{
-    public void enviarMensaje();
+    public void enviarMensaje(NombrePartido nombrePartido);
 }
