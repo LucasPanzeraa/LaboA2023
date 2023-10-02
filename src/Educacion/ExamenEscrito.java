@@ -32,11 +32,6 @@ public class ExamenEscrito extends Examen implements Aprobado{
 
     @Override
     public boolean aprobado() {
-        if (duracion < 90 && nota > 5.5){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return duracion < 90 && nota > 5.5;
     }
 }
