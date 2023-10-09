@@ -51,18 +51,21 @@ public class Sistema {
         }
     }
 
+    public void modificarPartidos(Partido partido){
+        if (partido.getGolLocal() > partido.getGolVisitante()){
+            partido.getLocal().getPartidosJugados().put(partido, true);
+            partido.getVisitante().getPartidosJugados().put(partido, false);
+        }
+        else {
+            partido.getLocal().getPartidosJugados().put(partido, false);
+            partido.getVisitante().getPartidosJugados().put(partido, true);
+        }
+    }
+
     public void jugarPartido(Partido partido){
         listaPartidos.add(partido);
         cargarGoles(partido);
         cargarAsistencias(partido);
-
-
-        if (partido.getGolLocal() > partido.getGolVisitante()){
-            partido.getLocal().setPartidosGanados(partido.getLocal().getPartidosGanados() +1);
-        }
-        else {
-            partido.getVisitante().setPartidosGanados(partido.getVisitante().getPartidosGanados() +1);
-        }
-
+        modificarPartidos(partido);
     }
 }

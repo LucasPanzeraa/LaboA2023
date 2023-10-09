@@ -1,24 +1,25 @@
 package src.Deporte.Futbol;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Equipo {
     private String nombre;
     private HashSet<Jugador> jugadoresDelEquipo;
-    private int partidosGanados;
+    private HashMap<Partido, Boolean> partidosJugados;
 
-    public Equipo(String nombre, HashSet<Jugador> jugadoresDelEquipo, int partidosGanados) {
+    public Equipo(String nombre, HashSet<Jugador> jugadoresDelEquipo, HashMap<Partido, Boolean> partidosJugados) {
         this.nombre = nombre;
         this.jugadoresDelEquipo = jugadoresDelEquipo;
-        this.partidosGanados = partidosGanados;
+        this.partidosJugados = partidosJugados;
     }
 
-    public int getPartidosGanados() {
-        return partidosGanados;
+    public HashMap<Partido, Boolean> getPartidosJugados() {
+        return partidosJugados;
     }
 
-    public void setPartidosGanados(int partidosGanados) {
-        this.partidosGanados = partidosGanados;
+    public void setPartidosJugados(HashMap<Partido, Boolean> partidosJugados) {
+        this.partidosJugados = partidosJugados;
     }
 
     public String getNombre() {
