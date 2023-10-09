@@ -1,4 +1,4 @@
-package src;
+package src.Deporte.Futbol;
 
 public interface Contrato {
 

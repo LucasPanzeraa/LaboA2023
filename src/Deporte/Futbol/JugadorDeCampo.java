@@ -1,4 +1,4 @@
-package src;
+package src.Deporte.Futbol;
 
 import src.Lugares.Provincias;
 

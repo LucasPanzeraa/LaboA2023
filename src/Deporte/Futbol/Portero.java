@@ -1,11 +1,10 @@
-package src;
+package src.Deporte.Futbol;
 
 import src.Lugares.Provincias;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Portero extends Jugador implements Contrato{
 
@@ -51,7 +50,7 @@ public class Portero extends Jugador implements Contrato{
 
     @Override
     public void hacerPromedio(int cantidad) {
-        
+
     }
 
     @Override

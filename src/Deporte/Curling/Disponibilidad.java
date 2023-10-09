@@ -1,4 +1,4 @@
-package src.Deporte;
+package src.Deporte.Curling;
 import src.Fechas.Dia;
 import src.Fechas.Turno;
 

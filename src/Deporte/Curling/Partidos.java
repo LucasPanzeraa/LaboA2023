@@ -1,5 +1,4 @@
-package src.Deporte;
-import src.Deporte.CurlingEquipo;
+package src.Deporte.Curling;
 
 public class Partidos {
 
