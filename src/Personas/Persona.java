@@ -50,6 +50,13 @@ public abstract class Persona {
         this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
+    public Persona(String nombre, String apellido, int DNI, int edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.DNI = DNI;
+        this.edad = edad;
+    }
+
     public Persona(String nombre, String apellido, int peso, int altura, int edad, LocalDate fechaDeNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
