@@ -1,27 +1,66 @@
 package src;
 
 import java.util.HashSet;
+import java.util.Map;
 
 public class Sistema {
-    private HashSet<Partido> listapartidos;
+    private HashSet<Partido> listaPartidos;
 
-    private HashSet<Equipo> listaequipos;
+    private HashSet<Equipo> listaEquipos;
 
-    public HashSet<Partido> getListapartidos() {
-        return listapartidos;
+    public Sistema(HashSet<Partido> listaPartidos, HashSet<Equipo> listaEquipos) {
+        this.listaPartidos = listaPartidos;
+        this.listaEquipos = listaEquipos;
     }
 
-    public void setListapartidos(HashSet<Partido> listapartidos) {
-        this.listapartidos = listapartidos;
+    public HashSet<Partido> getListaPartidos() {
+        return listaPartidos;
     }
 
-    public HashSet<Equipo> getListaequipos() {
-        return listaequipos;
+    public void setListaPartidos(HashSet<Partido> listaPartidos) {
+        this.listaPartidos = listaPartidos;
     }
 
-    public void setListaequipos(HashSet<Equipo> listaequipos) {
-        this.listaequipos = listaequipos;
+    public HashSet<Equipo> getListaEquipos() {
+        return listaEquipos;
     }
 
+    public void setListaEquipos(HashSet<Equipo> listaEquipos) {
+        this.listaEquipos = listaEquipos;
+    }
 
+    public void cargarGoles(Partido partido){
+        for (Map.Entry<Jugador, Integer> jugador : partido.getGoles().entrySet()){
+            if (jugador instanceof Portero){
+                ((Portero) jugador).setAtajadas(((Portero) jugador).getAtajadas() + jugador.getValue());
+
+            }
+            else{
+                ((JugadorDeCampo)jugador).setGoles(((JugadorDeCampo) jugador).getGoles() + jugador.getValue());
+            }
+        }
+    }
+
+    public void cargarAsistencias(Partido partido){
+        for (Map.Entry<Jugador, Integer> jugador : partido.getGoles().entrySet()){
+            if (jugador instanceof JugadorDeCampo){
+
+                ((JugadorDeCampo)jugador).setAsistencias(((JugadorDeCampo) jugador).getAsistencias() + jugador.getValue());
+            }
+        }
+    }
+
+    public void jugarPartido(Partido partido){
+        listaPartidos.add(partido);
+        cargarGoles(partido);
+        cargarAsistencias(partido);
+
+        if (partido.getGolLocal() > partido.getGolVisitante()){
+            partido.getLocal().setPartidosGanados(partido.getLocal().getPartidosGanados() +1);
+        }
+        else {
+            partido.getVisitante().setPartidosGanados(partido.getVisitante().getPartidosGanados() +1);
+        }
+
+    }
 }

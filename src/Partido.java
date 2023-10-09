@@ -1,18 +1,17 @@
 package src;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class Partido {
 
-    private String Local;
+    private Equipo Local;
     private int golLocal;
-    private String Visitante;
+    private Equipo Visitante;
     private int golVisitante;
     private HashMap<Jugador,Integer> goles;
     private HashMap<Jugador,Integer> asistencia;
 
-    public Partido(String local, int golLocal, String visitante, int golVisitante, HashMap<Jugador, Integer> goles, HashMap<Jugador, Integer> asistencia) {
+    public Partido(Equipo local, int golLocal, Equipo visitante, int golVisitante, HashMap<Jugador, Integer> goles, HashMap<Jugador, Integer> asistencia) {
         Local = local;
         this.golLocal = golLocal;
         Visitante = visitante;
@@ -21,12 +20,20 @@ public class Partido {
         this.asistencia = asistencia;
     }
 
-    public String getLocal() {
+    public Equipo getVisitante() {
+        return Visitante;
+    }
+
+    public Equipo getLocal() {
         return Local;
     }
 
-    public void setLocal(String local) {
+    public void setLocal(Equipo local) {
         Local = local;
+    }
+
+    public void setVisitante(Equipo visitante) {
+        Visitante = visitante;
     }
 
     public int getGolLocal() {
@@ -35,14 +42,6 @@ public class Partido {
 
     public void setGolLocal(int golLocal) {
         this.golLocal = golLocal;
-    }
-
-    public String getVisitante() {
-        return Visitante;
-    }
-
-    public void setVisitante(String visitante) {
-        Visitante = visitante;
     }
 
     public int getGolVisitante() {

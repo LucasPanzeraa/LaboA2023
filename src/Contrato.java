@@ -2,6 +2,7 @@ package src;
 
 public interface Contrato {
 
-    public void contratar(Equipo equipo);
-    public void renovar(Equipo equipo) throws NoRenovacion;
+    void contratar(Equipo equipo, Jugador jugador) throws NoContrato;
+    void renovar(Equipo equipo, Jugador jugador) throws NoRenovacion;
+    void hacerPromedio(int cantidad);
 }

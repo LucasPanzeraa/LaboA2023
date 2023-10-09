@@ -3,7 +3,7 @@ package src;
 import src.Lugares.Provincias;
 
 import java.time.LocalDate;
-import java.util.HashSet;
+import java.util.ArrayList;
 
 public abstract class Jugador {
 
@@ -11,9 +11,9 @@ public abstract class Jugador {
     private LocalDate nacimiento;
     private Provincias provincia;
     private int numeroCamiseta;
-    private HashSet<Equipo> historial;
+    private ArrayList<Equipo> historial;
 
-    public Jugador(String nombre, LocalDate nacimiento, Provincias provincia, int numeroCamiseta, HashSet<Equipo> historial) {
+    public Jugador(String nombre, LocalDate nacimiento, Provincias provincia, int numeroCamiseta, ArrayList<Equipo> historial) {
         this.nombre = nombre;
         this.nacimiento = nacimiento;
         this.provincia = provincia;
@@ -53,11 +53,11 @@ public abstract class Jugador {
         this.numeroCamiseta = numeroCamiseta;
     }
 
-    public HashSet<Equipo> getHistorial() {
+    public ArrayList<Equipo> getHistorial() {
         return historial;
     }
 
-    public void setHistorial(HashSet<Equipo> historial) {
+    public void setHistorial(ArrayList<Equipo> historial) {
         this.historial = historial;
     }
 
@@ -70,5 +70,9 @@ public abstract class Jugador {
                 ", numeroCamiseta=" + numeroCamiseta +
                 ", historial=" + historial +
                 '}';
+    }
+
+    public void hacerPromedio(){
+
     }
 }
