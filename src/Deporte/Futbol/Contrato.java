@@ -2,7 +2,7 @@ package src.Deporte.Futbol;
 
 public interface Contrato {
 
-    void contratar(Equipo equipo, Jugador jugador) throws NoContrato;
-    void renovar(Equipo equipo, Jugador jugador) throws NoRenovacion;
-    void hacerPromedio(int cantidad);
+    void contratar(Equipo equipo) throws NoContrato;
+    void renovar(Equipo equipo) throws NoRenovacion;
+    double hacerPromedio();
 }

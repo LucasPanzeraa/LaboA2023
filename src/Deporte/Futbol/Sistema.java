@@ -33,10 +33,11 @@ public class Sistema {
         for (Map.Entry<Jugador, Integer> jugador : partido.getGoles().entrySet()){
             if (jugador instanceof Portero){
                 ((Portero) jugador).setAtajadas(((Portero) jugador).getAtajadas() + jugador.getValue());
-
+                ((Portero) jugador).setPromAtajadas(((Portero) jugador).hacerPromedio());
             }
             else{
                 ((JugadorDeCampo)jugador).setGoles(((JugadorDeCampo) jugador).getGoles() + jugador.getValue());
+                ((JugadorDeCampo) jugador).setPromGoles(((JugadorDeCampo) jugador).hacerPromedio());
             }
         }
     }
@@ -54,6 +55,7 @@ public class Sistema {
         listaPartidos.add(partido);
         cargarGoles(partido);
         cargarAsistencias(partido);
+
 
         if (partido.getGolLocal() > partido.getGolVisitante()){
             partido.getLocal().setPartidosGanados(partido.getLocal().getPartidosGanados() +1);

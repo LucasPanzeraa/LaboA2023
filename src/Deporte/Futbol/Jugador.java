@@ -72,7 +72,4 @@ public abstract class Jugador {
                 '}';
     }
 
-    public void hacerPromedio(){
-
-    }
 }

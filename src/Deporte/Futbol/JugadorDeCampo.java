@@ -7,15 +7,24 @@ import java.util.ArrayList;
 
 public class JugadorDeCampo extends Jugador implements Contrato{
 
+    private int tirosTotales;
     private double promGoles;
     private int goles;
     private int asistencias;
 
-    public JugadorDeCampo(String nombre, LocalDate nacimiento, Provincias provincia, int numeroCamiseta, ArrayList<Equipo> historial, double promGoles, int goles, int asistencias) {
+    public JugadorDeCampo(String nombre, LocalDate nacimiento, Provincias provincia, int numeroCamiseta, ArrayList<Equipo> historial, int tirosTotales, int goles, int asistencias) {
         super(nombre, nacimiento, provincia, numeroCamiseta, historial);
-        this.promGoles = promGoles;
+        this.tirosTotales = tirosTotales;
         this.goles = goles;
         this.asistencias = asistencias;
+    }
+
+    public void setTirosTotales(int tirosTotales) {
+        this.tirosTotales = tirosTotales;
+    }
+
+    public int getTirosTotales() {
+        return tirosTotales;
     }
 
     public int getGoles() {
@@ -47,10 +56,10 @@ public class JugadorDeCampo extends Jugador implements Contrato{
     }
 
     @Override
-    public void contratar (Equipo equipo, Jugador jugador) throws NoContrato{
+    public void contratar (Equipo equipo) throws NoContrato{
         if (!getHistorial().contains(equipo) && promGoles > 30 && asistencias > 10) {
             getHistorial().add(equipo);
-            equipo.getJugadoresDelEquipo().add(jugador);
+            equipo.getJugadoresDelEquipo().add(this);
             System.out.println(this + "se contrato en el " + equipo.getNombre());
         }
         else {
@@ -59,12 +68,18 @@ public class JugadorDeCampo extends Jugador implements Contrato{
     }
 
     @Override
-    public void renovar(Equipo equipo, Jugador jugador) throws NoRenovacion {
-        if (!equipo.getJugadoresDelEquipo().contains(jugador) && getNacimiento().getYear() - 35 > 0) {
-            equipo.getJugadoresDelEquipo().remove(jugador);
+    public void renovar(Equipo equipo) throws NoRenovacion {
+        if (!equipo.getJugadoresDelEquipo().contains(this) && getNacimiento().getYear() - 35 > 0) {
+            equipo.getJugadoresDelEquipo().remove(this);
             throw new NoRenovacion("no cumple los requisitos para renovar");
         } else {
             getHistorial().add(equipo);
         }
+    }
+
+    @Override
+    public double hacerPromedio() {
+        double promedio = tirosTotales * 100 / goles;
+        return promedio;
     }
 }

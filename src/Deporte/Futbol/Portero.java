@@ -4,22 +4,31 @@ import src.Lugares.Provincias;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Portero extends Jugador implements Contrato{
 
-    private HashMap<Partido, Integer> atajadas;
+    private int tiros;
+    private int atajadas;
     private double promAtajadas;
     private int golesRecibidos;
 
-    public Portero(String nombre, LocalDate nacimiento, Provincias provincia, int numeroCamiseta, ArrayList<Equipo> historial, HashMap<Partido, Integer> atajadas, double promAtajadas, int golesRecibidos) {
+    public Portero(String nombre, LocalDate nacimiento, Provincias provincia, int numeroCamiseta, ArrayList<Equipo> historial, int tiros, int atajadas, double promAtajadas, int golesRecibidos) {
         super(nombre, nacimiento, provincia, numeroCamiseta, historial);
+        this.tiros = tiros;
         this.atajadas = atajadas;
-        this.promAtajadas = promAtajadas;
+        this.promAtajadas = hacerPromedio();
         this.golesRecibidos = golesRecibidos;
     }
 
-    public void setAtajadas(HashMap<Partido, Integer> atajadas) {
+    public int getTiros() {
+        return tiros;
+    }
+
+    public void setTiros(int tiros) {
+        this.tiros = tiros;
+    }
+
+    public void setAtajadas(int atajadas) {
         this.atajadas = atajadas;
     }
 
@@ -49,15 +58,16 @@ public class Portero extends Jugador implements Contrato{
 
 
     @Override
-    public void hacerPromedio(int cantidad) {
-
+    public double hacerPromedio() {
+        double promedio = tiros * 100 / atajadas;
+        return promedio;
     }
 
     @Override
-    public void contratar(Equipo equipo, Jugador jugador) throws NoContrato{
+    public void contratar(Equipo equipo) throws NoContrato{
         if(!getHistorial().contains(equipo) && promAtajadas < 60 && golesRecibidos > 10){
             getHistorial().add(equipo);
-            equipo.getJugadoresDelEquipo().add(jugador);
+            equipo.getJugadoresDelEquipo().add(this);
             System.out.println(this + "se contrato en el " + equipo);
         }
         else {
@@ -67,9 +77,9 @@ public class Portero extends Jugador implements Contrato{
     }
 
     @Override
-    public void renovar(Equipo equipo, Jugador jugador) throws NoRenovacion {
-        if (!equipo.getJugadoresDelEquipo().contains(jugador) && getNacimiento().getYear() - 35 > 0) {
-            equipo.getJugadoresDelEquipo().remove(jugador);
+    public void renovar(Equipo equipo) throws NoRenovacion {
+        if (!equipo.getJugadoresDelEquipo().contains(this) && getNacimiento().getYear() - 35 > 0) {
+            equipo.getJugadoresDelEquipo().remove(this);
             throw new NoRenovacion("no cumple los requisitos para renovar");
         } else {
             getHistorial().add(equipo);
